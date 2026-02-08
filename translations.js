@@ -23,6 +23,7 @@ const translations = {
         "section.logros": "Logros Destacados",
         "section.educacion": "Formación Académica",
         // About
+        "about.master": "Actualmente estudiando Máster en Inteligencia Artificial & Machine Learning for Business - EAE.",
         "about.download": "Descargar CV",
         // Contact
         "contact.title": "Conversemos sobre tu próximo desafío",
@@ -60,6 +61,7 @@ const translations = {
         "section.competencias": "Competències",
         "section.logros": "Assoliments Destacats",
         "section.educacion": "Formació Acadèmica",
+        "about.master": "Actualment estudiant Màster en Intel·ligència Artificial & Machine Learning for Business - EAE.",
         "about.download": "Descarregar CV",
         "contact.title": "Parlem del teu proper repte",
         "contact.text": "Estic interessat en oportunitats on pugui aportar la meva experiència en control de gestió, direcció de projectes i analítica de dades. No dubtis a contactar-me.",
@@ -94,6 +96,7 @@ const translations = {
         "section.competencias": "Skills & Competencies",
         "section.logros": "Key Achievements",
         "section.educacion": "Education & Training",
+        "about.master": "Currently studying Master's in Artificial Intelligence & Machine Learning for Business - EAE.",
         "about.download": "Download CV",
         "contact.title": "Let's talk about your next challenge",
         "contact.text": "I'm interested in opportunities where I can contribute my experience in management control, project management, and data analytics. Feel free to reach out.",
