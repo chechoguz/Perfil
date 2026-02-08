@@ -20,17 +20,31 @@
             <span class="brand-accent">&lt;</span>SHT<span class="brand-accent">/&gt;</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-            <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
-            <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
-            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-            <li><a href="#logros" class="nav-link">Logros</a></li>
-            <li><a href="#educacion" class="nav-link">Educación</a></li>
-            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            <li><a href="#inicio" class="nav-link active" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="#sobre-mi" class="nav-link" data-i18n="nav.sobre">Sobre Mí</a></li>
+            <li><a href="#experiencia" class="nav-link" data-i18n="nav.experiencia">Experiencia</a></li>
+            <li><a href="#habilidades" class="nav-link" data-i18n="nav.habilidades">Habilidades</a></li>
+            <li><a href="#logros" class="nav-link" data-i18n="nav.logros">Logros</a></li>
+            <li><a href="#educacion" class="nav-link" data-i18n="nav.educacion">Educación</a></li>
+            <li><a href="#contacto" class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-            <i class="fas fa-moon"></i>
-        </button>
+        <div class="nav-actions">
+            <div class="lang-selector" id="langSelector">
+                <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+                    <i class="fas fa-globe"></i>
+                    <span class="lang-current">ES</span>
+                    <i class="fas fa-chevron-down lang-arrow"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option active" data-lang="es">Castellano</button>
+                    <button class="lang-option" data-lang="ca">Català</button>
+                    <button class="lang-option" data-lang="en">English</button>
+                </div>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
         <button class="nav-hamburger" id="navHamburger" aria-label="Menú">
             <span></span><span></span><span></span>
         </button>
@@ -39,13 +53,13 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <ul class="mobile-nav-links">
-            <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
-            <li><a href="#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
-            <li><a href="#experiencia" class="mobile-nav-link">Experiencia</a></li>
-            <li><a href="#habilidades" class="mobile-nav-link">Habilidades</a></li>
-            <li><a href="#logros" class="mobile-nav-link">Logros</a></li>
-            <li><a href="#educacion" class="mobile-nav-link">Educación</a></li>
-            <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+            <li><a href="#inicio" class="mobile-nav-link" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="#sobre-mi" class="mobile-nav-link" data-i18n="nav.sobre">Sobre Mí</a></li>
+            <li><a href="#experiencia" class="mobile-nav-link" data-i18n="nav.experiencia">Experiencia</a></li>
+            <li><a href="#habilidades" class="mobile-nav-link" data-i18n="nav.habilidades">Habilidades</a></li>
+            <li><a href="#logros" class="mobile-nav-link" data-i18n="nav.logros">Logros</a></li>
+            <li><a href="#educacion" class="mobile-nav-link" data-i18n="nav.educacion">Educación</a></li>
+            <li><a href="#contacto" class="mobile-nav-link" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
     </div>
 
@@ -54,10 +68,10 @@
         <div class="hero-particles" id="heroParticles"></div>
         <div class="hero-content">
             <div class="hero-badge reveal">
-                <i class="fas fa-circle status-dot"></i> Disponible para nuevos desafíos
+                <i class="fas fa-circle status-dot"></i> <span data-i18n="hero.badge">Disponible para nuevos desafíos</span>
             </div>
             <h1 class="hero-title reveal">
-                <span class="greeting">Hola, soy</span>
+                <span class="greeting" data-i18n="hero.greeting">Hola, soy</span>
                 <span class="name-line">
                     <span class="first-name">Sergio</span>
                     <span class="last-name">Herrera Toloza</span>
@@ -68,31 +82,31 @@
                 <span class="typewriter-text" id="typewriter"></span>
                 <span class="typewriter-cursor">|</span>
             </div>
-            <p class="hero-description reveal">
+            <p class="hero-description reveal" data-i18n="hero.description">
                 Ingeniero en Información y Control de Gestión con más de 10 años liderando áreas
                 de control de gestión, presupuestos y dirección de proyectos tecnológicos. Integrando analítica
                 de datos avanzada con visión estratégica institucional.
             </p>
             <div class="hero-cta reveal">
                 <a href="#contacto" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i> Contáctame
+                    <i class="fas fa-paper-plane"></i> <span data-i18n="hero.cta1">Contáctame</span>
                 </a>
                 <a href="#logros" class="btn btn-outline">
-                    <i class="fas fa-trophy"></i> Ver Logros
+                    <i class="fas fa-trophy"></i> <span data-i18n="hero.cta2">Ver Logros</span>
                 </a>
             </div>
             <div class="hero-stats reveal">
                 <div class="stat">
                     <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Años de experiencia</span>
+                    <span class="stat-label" data-i18n="hero.stat1">Años de experiencia</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Instituciones lideradas</span>
+                    <span class="stat-label" data-i18n="hero.stat2">Instituciones lideradas</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" data-target="794">0</span><span class="stat-suffix"></span>
-                    <span class="stat-label">Horas de formación técnica</span>
+                    <span class="stat-label" data-i18n="hero.stat3">Horas de formación técnica</span>
                 </div>
             </div>
         </div>
@@ -108,7 +122,7 @@
     <section class="section" id="sobre-mi">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">01.</span> Sobre Mí
+                <span class="section-number">01.</span> <span data-i18n="nav.sobre">Sobre Mí</span>
             </h2>
             <div class="about-grid">
                 <div class="about-image reveal">
@@ -147,7 +161,7 @@
                         </div>
                     </div>
                     <a href="assets/Sergio_Herrera_Toloza_CV.pdf" download class="btn btn-primary" id="downloadCV">
-                        <i class="fas fa-download"></i> Descargar CV
+                        <i class="fas fa-download"></i> <span data-i18n="about.download">Descargar CV</span>
                     </a>
                 </div>
             </div>
@@ -158,7 +172,7 @@
     <section class="section section-alt" id="experiencia">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">02.</span> Experiencia Profesional
+                <span class="section-number">02.</span> <span data-i18n="section.experiencia">Experiencia Profesional</span>
             </h2>
             <div class="timeline">
                 <div class="timeline-item reveal">
@@ -285,7 +299,7 @@
     <section class="section" id="habilidades">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">03.</span> Competencias
+                <span class="section-number">03.</span> <span data-i18n="section.competencias">Competencias</span>
             </h2>
             <div class="skills-grid">
                 <div class="skill-category reveal">
@@ -404,7 +418,7 @@
     <section class="section section-alt" id="logros">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">04.</span> Logros Destacados
+                <span class="section-number">04.</span> <span data-i18n="section.logros">Logros Destacados</span>
             </h2>
             <div class="projects-grid">
                 <div class="project-card reveal">
@@ -489,7 +503,7 @@
     <section class="section" id="educacion">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">05.</span> Formación Académica
+                <span class="section-number">05.</span> <span data-i18n="section.educacion">Formación Académica</span>
             </h2>
             <div class="education-grid">
                 <div class="education-card reveal">
@@ -556,12 +570,12 @@
     <section class="section section-alt" id="contacto">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">06.</span> Contacto
+                <span class="section-number">06.</span> <span data-i18n="nav.contacto">Contacto</span>
             </h2>
             <div class="contact-grid">
                 <div class="contact-info reveal">
-                    <h3>Conversemos sobre tu próximo desafío</h3>
-                    <p>Estoy interesado en oportunidades donde pueda aportar mi experiencia en control
+                    <h3 data-i18n="contact.title">Conversemos sobre tu próximo desafío</h3>
+                    <p data-i18n="contact.text">Estoy interesado en oportunidades donde pueda aportar mi experiencia en control
                     de gestión, dirección de proyectos y analítica de datos. No dudes en contactarme.</p>
                     <div class="contact-methods">
                         <a href="mailto:sherrera@fen.uchile.cl" class="contact-method">
@@ -609,7 +623,7 @@
                         <div class="form-line"></div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
-                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="contact.send">Enviar Mensaje</span>
                     </button>
                 </form>
             </div>
@@ -623,12 +637,13 @@
                 <div class="footer-brand">
                     <span class="brand-accent">&lt;</span>SHT<span class="brand-accent">/&gt;</span>
                 </div>
-                <p class="footer-text">Diseñado con <span class="heart">&hearts;</span> por Sergio Herrera Toloza</p>
+                <p class="footer-text"><span data-i18n="footer.text">Diseñado con</span> <span class="heart">&hearts;</span> <span data-i18n="footer.by">por Sergio Herrera Toloza</span></p>
                 <p class="footer-copyright">&copy; 2026 — Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
