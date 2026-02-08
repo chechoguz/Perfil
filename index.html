@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Herrera Toloza — CV Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-accent">&lt;</span>SHT<span class="brand-accent">/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+            <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#logros" class="nav-link">Logros</a></li>
+            <li><a href="#educacion" class="nav-link">Educación</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Menú">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li><a href="#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li><a href="#experiencia" class="mobile-nav-link">Experiencia</a></li>
+            <li><a href="#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li><a href="#logros" class="mobile-nav-link">Logros</a></li>
+            <li><a href="#educacion" class="mobile-nav-link">Educación</a></li>
+            <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <i class="fas fa-circle status-dot"></i> Disponible para nuevos desafíos
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="greeting">Hola, soy</span>
+                <span class="name-line">
+                    <span class="first-name">Sergio</span>
+                    <span class="last-name">Herrera Toloza</span>
+                </span>
+            </h1>
+            <div class="hero-typewriter reveal">
+                <span class="typewriter-prefix">$ </span>
+                <span class="typewriter-text" id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-description reveal">
+                Ingeniero en Información y Control de Gestión con más de 10 años liderando áreas
+                de control de gestión, presupuestos y dirección de proyectos tecnológicos. Integrando analítica
+                de datos avanzada con visión estratégica institucional.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#contacto" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Contáctame
+                </a>
+                <a href="#logros" class="btn btn-outline">
+                    <i class="fas fa-trophy"></i> Ver Logros
+                </a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Años de experiencia</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Instituciones lideradas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="794">0</span><span class="stat-suffix"></span>
+                    <span class="stat-label">Horas de formación técnica</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="sobre-mi">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">01.</span> Sobre Mí
+            </h2>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <img src="assets/profile.jpg" alt="Sergio Herrera Toloza" class="profile-photo">
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>
+                        Ingeniero en Información y Control de Gestión de la <strong>Universidad de Chile</strong>
+                        con más de 10 años de trayectoria liderando áreas de control de gestión, presupuestos
+                        y dirección de proyectos en los sectores público y privado.
+                    </p>
+                    <p>
+                        Especialista en el cumplimiento de planes estratégicos mediante un enfoque de
+                        innovación, mejora continua y liderazgo de equipos multidisciplinarios. Poseo una
+                        formación técnica avanzada en <strong>Data Science (Python)</strong> y
+                        <strong>Desarrollo Full Stack (JavaScript)</strong>, lo que me permite integrar
+                        analítica de datos avanzada en la gestión institucional.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Barcelona, España</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>sherrera@fen.uchile.cl</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-university"></i>
+                            <span>Universidad de Chile — FEN</span>
+                        </div>
+                    </div>
+                    <a href="assets/Sergio_Herrera_Toloza_CV.pdf" download class="btn btn-primary" id="downloadCV">
+                        <i class="fas fa-download"></i> Descargar CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experiencia">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">02.</span> Experiencia Profesional
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Jefe de Departamento BNE</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-landmark"></i> Bolsa Nacional de Empleo — Subsecretaría del Trabajo
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> Mayo 2022 — Diciembre 2025
+                        </span>
+                        <p>Definición de lineamientos estratégicos y planes de acción para la plataforma
+                        nacional de empleo. Dirección del departamento para la ejecución de estrategias,
+                        análisis de impacto de inversiones en desarrollos tecnológicos, gestión de
+                        licitaciones públicas y participación técnica en la actualización de la
+                        Política Nacional de Inteligencia Artificial.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Estrategia</span>
+                            <span class="tag">Licitaciones</span>
+                            <span class="tag">Política IA</span>
+                            <span class="tag">Gestión Pública</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Encargado de Procesos y Convenios</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-hospital"></i> Colegio Médico de Chile A.G.
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> Septiembre 2019 — Enero 2022
+                        </span>
+                        <p>Liderazgo en la elaboración de descripciones de cargo institucionales y
+                        estandarización de procesos internos. Implementación de firma y pago electrónico
+                        y creación de convenios estratégicos con aliados externos.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Procesos</span>
+                            <span class="tag">Firma Electrónica</span>
+                            <span class="tag">Convenios</span>
+                            <span class="tag">Estandarización</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ingeniero de Planificación</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-graduation-cap"></i> Agencia de Calidad de la Educación
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> Febrero 2019 — Agosto 2019
+                        </span>
+                        <p>Planificación y control operativo de las visitas técnicas a establecimientos
+                        educacionales a nivel nacional, asegurando el cumplimiento de estándares de
+                        calidad educativa.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Planificación</span>
+                            <span class="tag">Control Operativo</span>
+                            <span class="tag">Calidad Educativa</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Encargado de Operaciones / Planificación y Control de Gestión</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-id-card"></i> Servicio de Registro Civil e Identificación
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> Abril 2016 — Junio 2018
+                        </span>
+                        <p>Monitoreo y seguimiento de metas institucionales mediante CMI, Alta Dirección
+                        Pública y PMG. Gestión de cartera de proyectos con plataformas BIP y Chile Indica.
+                        Supervisión de oficinas regionales y capacitación en reglamentos y manuales de procesos.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">CMI</span>
+                            <span class="tag">PMG</span>
+                            <span class="tag">Proyectos BIP</span>
+                            <span class="tag">Operaciones</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Analista de Control de Gestión y Procesos</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-chart-bar"></i> SVS / Univ. de Viña del Mar / Cepech
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> Mayo 2012 — Febrero 2015
+                        </span>
+                        <p>Estandarización de fuentes de información para control presupuestario y gestión
+                        de licitaciones. Creación de mapas estratégicos, informes de gestión para alta
+                        dirección y gestión de matrices de riesgo.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Presupuestos</span>
+                            <span class="tag">Licitaciones</span>
+                            <span class="tag">Mapas Estratégicos</span>
+                            <span class="tag">Riesgo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="habilidades">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">03.</span> Competencias
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Data Science & Analítica</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span>Python / Data Science</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span>Análisis de Datos</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span>Visualización de Datos</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span>Indicadores & KPIs</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Desarrollo Web Full Stack</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span>JavaScript / Node.js</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <div class="skill-info">
+                                <span>HTML / CSS / React</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="70">
+                            <div class="skill-info">
+                                <span>Bases de Datos SQL</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="70">
+                            <div class="skill-info">
+                                <span>REST APIs</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-chess-king"></i>
+                        <h3>Gestión & Estrategia</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span>Control de Gestión / CMI</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span>Gestión Presupuestaria</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span>Licitaciones Públicas</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span>Mejora Continua / PMG</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logros Section (was Projects) -->
+    <section class="section section-alt" id="logros">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">04.</span> Logros Destacados
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Subsecretaría del Trabajo</span>
+                        <h3>Bolsa Nacional de Empleo</h3>
+                        <p>Dirección estratégica del departamento BNE, liderando la licitación para
+                        la administración del portal por el periodo 2025–2029, asegurando la continuidad
+                        operativa y el impacto de las inversiones tecnológicas en la plataforma nacional.</p>
+                        <div class="project-tech">
+                            <span>Estrategia</span>
+                            <span>Licitaciones</span>
+                            <span>Tecnología</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Gobierno de Chile</span>
+                        <h3>Política Nacional de Inteligencia Artificial</h3>
+                        <p>Participación técnica activa en la actualización de la Política Nacional
+                        de IA, contribuyendo con visión de gestión pública e innovación tecnológica.</p>
+                        <div class="project-tech">
+                            <span>IA</span>
+                            <span>Política Pública</span>
+                            <span>Innovación</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-digital-tachograph"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Colegio Médico de Chile</span>
+                        <h3>Transformación Digital Institucional</h3>
+                        <p>Implementación de firma y pago electrónico, estandarización de procesos internos
+                        y creación de convenios estratégicos con aliados externos.</p>
+                        <div class="project-tech">
+                            <span>Firma Digital</span>
+                            <span>Procesos</span>
+                            <span>Convenios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Registro Civil</span>
+                        <h3>Sistema de Control de Gestión Integral</h3>
+                        <p>Implementación de Cuadro de Mando Integral (CMI), seguimiento de metas ADP
+                        y PMG, y gestión de cartera de proyectos con plataformas BIP y Chile Indica.</p>
+                        <div class="project-tech">
+                            <span>CMI</span>
+                            <span>ADP</span>
+                            <span>PMG</span>
+                            <span>BIP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="educacion">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">05.</span> Formación Académica
+            </h2>
+            <div class="education-grid">
+                <div class="education-card reveal">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Ingeniero en Información y Control de Gestión</h3>
+                        <span class="education-school">
+                            <i class="fas fa-university"></i> Universidad de Chile — Facultad de Economía y Negocios
+                        </span>
+                        <span class="education-date">Título Profesional</span>
+                        <p>Formación integral en control de gestión, sistemas de información, finanzas,
+                        contabilidad y administración estratégica.</p>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Analista Data Science con Python</h3>
+                        <span class="education-school">
+                            <i class="fas fa-laptop-code"></i> Formación Especializada
+                        </span>
+                        <span class="education-date">354 horas de formación</span>
+                        <p>Programa avanzado en ciencia de datos con Python, incluyendo análisis estadístico,
+                        machine learning, visualización de datos y procesamiento de grandes volúmenes de información.</p>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Desarrollador Full Stack JavaScript</h3>
+                        <span class="education-school">
+                            <i class="fas fa-laptop-code"></i> Formación Especializada
+                        </span>
+                        <span class="education-date">440 horas de formación</span>
+                        <p>Programa intensivo de desarrollo web completo con JavaScript, incluyendo
+                        frontend, backend, bases de datos y despliegue de aplicaciones.</p>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <div class="education-info">
+                        <h3>Preparación y Evaluación Social de Proyectos</h3>
+                        <span class="education-school">
+                            <i class="fas fa-landmark"></i> Formación en Gestión Pública
+                        </span>
+                        <span class="education-date">80 horas de formación</span>
+                        <p>Metodologías de evaluación social de proyectos públicos e introducción
+                        a la administración del Estado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contacto">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">06.</span> Contacto
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Conversemos sobre tu próximo desafío</h3>
+                    <p>Estoy interesado en oportunidades donde pueda aportar mi experiencia en control
+                    de gestión, dirección de proyectos y analítica de datos. No dudes en contactarme.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:sherrera@fen.uchile.cl" class="contact-method">
+                            <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-method-label">Email</span>
+                                <span class="contact-method-value">sherrera@fen.uchile.cl</span>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="contact-method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-method-label">Ubicación</span>
+                                <span class="contact-method-value">Barcelona, España</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sergio-gustavo-herrera-toloza-90450932/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/sherrera@fen.uchile.cl" method="POST">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="">
+                    <input type="text" name="_honey" style="display:none">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" required placeholder=" ">
+                        <label for="name">Nombre completo</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="_subject" id="subject" required placeholder=" ">
+                        <label for="subject">Asunto</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Mensaje</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-accent">&lt;</span>SHT<span class="brand-accent">/&gt;</span>
+                </div>
+                <p class="footer-text">Diseñado con <span class="heart">&hearts;</span> por Sergio Herrera Toloza</p>
+                <p class="footer-copyright">&copy; 2026 — Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
