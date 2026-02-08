@@ -15,6 +15,10 @@ function applyTranslations(lang) {
         const key = el.getAttribute('data-i18n');
         if (t[key]) el.textContent = t[key];
     });
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-html');
+        if (t[key]) el.innerHTML = t[key];
+    });
     // Update typewriter phrases
     if (t.typewriter) {
         phrases.length = 0;
