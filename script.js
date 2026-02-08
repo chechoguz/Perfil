@@ -1,4 +1,64 @@
 // =========================================
+// Language Switcher
+// =========================================
+let currentLang = localStorage.getItem('lang') || 'es';
+
+const langToggle = document.getElementById('langToggle');
+const langDropdown = document.getElementById('langDropdown');
+const langOptions = document.querySelectorAll('.lang-option');
+const langCurrent = document.querySelector('.lang-current');
+
+function applyTranslations(lang) {
+    const t = translations[lang];
+    if (!t) return;
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+    });
+    // Update typewriter phrases
+    if (t.typewriter) {
+        phrases.length = 0;
+        t.typewriter.forEach((p) => phrases.push(p));
+        phraseIndex = 0;
+        charIndex = 0;
+        isDeleting = false;
+    }
+    document.documentElement.lang = lang === 'es' ? 'es' : lang === 'ca' ? 'ca' : 'en';
+}
+
+langToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langDropdown.classList.toggle('open');
+});
+
+langOptions.forEach((opt) => {
+    opt.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const lang = opt.getAttribute('data-lang');
+        currentLang = lang;
+        localStorage.setItem('lang', lang);
+        langCurrent.textContent = lang.toUpperCase();
+        langOptions.forEach((o) => o.classList.remove('active'));
+        opt.classList.add('active');
+        langDropdown.classList.remove('open');
+        applyTranslations(lang);
+    });
+});
+
+document.addEventListener('click', () => {
+    langDropdown.classList.remove('open');
+});
+
+// Apply saved language on load
+if (currentLang !== 'es') {
+    langCurrent.textContent = currentLang.toUpperCase();
+    langOptions.forEach((o) => {
+        o.classList.remove('active');
+        if (o.getAttribute('data-lang') === currentLang) o.classList.add('active');
+    });
+}
+
+// =========================================
 // Cursor Glow Effect
 // =========================================
 const cursorGlow = document.getElementById('cursorGlow');
@@ -137,6 +197,9 @@ function typeWriter() {
 }
 
 typeWriter();
+
+// Apply saved language after phrases are defined
+applyTranslations(currentLang);
 
 // =========================================
 // Scroll Reveal
