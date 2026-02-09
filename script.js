@@ -163,11 +163,11 @@ mobileLinks.forEach((link) => {
 // =========================================
 const typewriterEl = document.getElementById('typewriter');
 const phrases = [
-    'Ingeniero en Control de Gestión',
-    'Data Science & Python',
-    'Desarrollador Full Stack JavaScript',
-    'Líder de Equipos Multidisciplinarios',
-    'Gestión Estratégica & Innovación'
+    'Consultor IA & Data Science',
+    'Ex-Jefe Dpto. BNE — Gobierno de Chile',
+    'Máster IA & Machine Learning — Barcelona',
+    'Automatización con Inteligencia Artificial',
+    'Dashboards & Analítica Avanzada'
 ];
 
 let phraseIndex = 0;
@@ -415,3 +415,97 @@ projectCards.forEach((card) => {
         card.style.transform = '';
     });
 });
+
+// =========================================
+// Interactive Dashboard (Plotly)
+// =========================================
+function initDashboard() {
+    if (typeof Plotly === 'undefined') {
+        setTimeout(initDashboard, 500);
+        return;
+    }
+
+    const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+    const colors = {
+        bg: isDark ? '#1a1a2e' : '#ffffff',
+        text: isDark ? '#e4e4e7' : '#18181b',
+        grid: isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)',
+        accent: '#6366f1',
+        accent2: '#a855f7',
+        accent3: '#22c55e',
+        accent4: '#f59e0b',
+    };
+
+    const layout = {
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: { family: 'Inter, sans-serif', color: colors.text, size: 12 },
+        margin: { t: 50, r: 20, b: 50, l: 50 },
+        xaxis: { gridcolor: colors.grid, linecolor: colors.grid },
+        yaxis: { gridcolor: colors.grid, linecolor: colors.grid },
+    };
+
+    // Chart 1: Employment trends
+    const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+    const vacantes2024 = [42300, 45100, 48200, 51800, 49700, 46300, 44800, 47200, 50600, 53100, 55400, 52800];
+    const vacantes2025 = [48700, 51200, 54800, 58300, 56100, 53400, 51900, 54700, 58200, 61500, 63800, 60200];
+    const colocaciones = [28400, 30200, 32500, 34900, 33100, 31200, 30100, 31800, 34200, 35800, 37200, 35600];
+
+    Plotly.newPlot('chartEmployment', [
+        {
+            x: months, y: vacantes2024, name: 'Vacantes 2024',
+            type: 'scatter', mode: 'lines+markers',
+            line: { color: colors.accent, width: 2.5 },
+            marker: { size: 5 },
+        },
+        {
+            x: months, y: vacantes2025, name: 'Vacantes 2025',
+            type: 'scatter', mode: 'lines+markers',
+            line: { color: colors.accent2, width: 2.5 },
+            marker: { size: 5 },
+        },
+        {
+            x: months, y: colocaciones, name: 'Colocaciones',
+            type: 'bar',
+            marker: { color: colors.accent3, opacity: 0.4 },
+        },
+    ], {
+        ...layout,
+        title: { text: 'Vacantes y Colocaciones BNE', font: { size: 14, weight: 600 } },
+        yaxis: { ...layout.yaxis, title: 'Cantidad' },
+        legend: { orientation: 'h', y: -0.2, x: 0.5, xanchor: 'center', font: { size: 11 } },
+        barmode: 'overlay',
+    }, { responsive: true, displayModeBar: false });
+
+    // Chart 2: Sectors donut
+    const sectors = ['Comercio', 'Servicios', 'Industria', 'Construcción', 'Tecnología', 'Salud', 'Educación', 'Otros'];
+    const values = [22, 19, 15, 12, 11, 8, 7, 6];
+    const sectorColors = [colors.accent, colors.accent2, colors.accent3, colors.accent4, '#ec4899', '#06b6d4', '#8b5cf6', '#64748b'];
+
+    Plotly.newPlot('chartSectors', [{
+        labels: sectors,
+        values: values,
+        type: 'pie',
+        hole: 0.55,
+        marker: { colors: sectorColors },
+        textinfo: 'label+percent',
+        textposition: 'outside',
+        textfont: { size: 11 },
+        hoverinfo: 'label+value+percent',
+    }], {
+        ...layout,
+        title: { text: 'Distribución por Sector Económico', font: { size: 14, weight: 600 } },
+        showlegend: false,
+        margin: { t: 50, r: 50, b: 30, l: 50 },
+    }, { responsive: true, displayModeBar: false });
+}
+
+initDashboard();
+
+// Re-render charts on theme change
+const origToggle = document.getElementById('themeToggle');
+if (origToggle) {
+    origToggle.addEventListener('click', () => {
+        setTimeout(initDashboard, 100);
+    });
+}

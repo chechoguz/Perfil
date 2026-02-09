@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio Herrera Toloza — CV Portfolio</title>
+    <title>Sergio Herrera Toloza — Consultor IA & Data</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
 </head>
 <body>
     <!-- Cursor glow effect -->
@@ -22,6 +23,7 @@
         <ul class="nav-links">
             <li><a href="#inicio" class="nav-link active" data-i18n="nav.inicio">Inicio</a></li>
             <li><a href="#sobre-mi" class="nav-link" data-i18n="nav.sobre">Sobre Mí</a></li>
+            <li><a href="#servicios" class="nav-link" data-i18n="nav.servicios">Servicios</a></li>
             <li><a href="#experiencia" class="nav-link" data-i18n="nav.experiencia">Experiencia</a></li>
             <li><a href="#habilidades" class="nav-link" data-i18n="nav.habilidades">Habilidades</a></li>
             <li><a href="#logros" class="nav-link" data-i18n="nav.logros">Logros</a></li>
@@ -29,6 +31,10 @@
             <li><a href="#contacto" class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
         </ul>
         <div class="nav-actions">
+            <div class="hero-social-links">
+                <a href="https://www.linkedin.com/in/sergio-gustavo-herrera-toloza-90450932/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/chechoguz" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
             <div class="lang-selector" id="langSelector">
                 <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
                     <i class="fas fa-globe"></i>
@@ -55,6 +61,7 @@
         <ul class="mobile-nav-links">
             <li><a href="#inicio" class="mobile-nav-link" data-i18n="nav.inicio">Inicio</a></li>
             <li><a href="#sobre-mi" class="mobile-nav-link" data-i18n="nav.sobre">Sobre Mí</a></li>
+            <li><a href="#servicios" class="mobile-nav-link" data-i18n="nav.servicios">Servicios</a></li>
             <li><a href="#experiencia" class="mobile-nav-link" data-i18n="nav.experiencia">Experiencia</a></li>
             <li><a href="#habilidades" class="mobile-nav-link" data-i18n="nav.habilidades">Habilidades</a></li>
             <li><a href="#logros" class="mobile-nav-link" data-i18n="nav.logros">Logros</a></li>
@@ -83,16 +90,16 @@
                 <span class="typewriter-cursor">|</span>
             </div>
             <p class="hero-description reveal" data-i18n="hero.description">
-                Ingeniero en Información y Control de Gestión con más de 10 años liderando áreas
-                de control de gestión, presupuestos y dirección de proyectos tecnológicos. Integrando analítica
-                de datos avanzada con visión estratégica institucional.
+                Consultor en Inteligencia Artificial & Data Science. Ex-Jefe de Departamento en la Bolsa Nacional de Empleo.
+                Máster en IA & Machine Learning en Barcelona. Transformo datos en decisiones estratégicas
+                y automatizo procesos con inteligencia artificial.
             </p>
             <div class="hero-cta reveal">
-                <a href="#contacto" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i> <span data-i18n="hero.cta1">Contáctame</span>
+                <a href="#servicios" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> <span data-i18n="hero.cta1">Ver Servicios</span>
                 </a>
-                <a href="#logros" class="btn btn-outline">
-                    <i class="fas fa-trophy"></i> <span data-i18n="hero.cta2">Ver Logros</span>
+                <a href="#contacto" class="btn btn-outline">
+                    <i class="fas fa-paper-plane"></i> <span data-i18n="hero.cta2">Contáctame</span>
                 </a>
             </div>
             <div class="hero-stats reveal">
@@ -171,11 +178,88 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="section section-alt" id="experiencia">
+    <!-- Services Section -->
+    <section class="section section-alt" id="servicios">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">02.</span> <span data-i18n="section.experiencia">Experiencia Profesional</span>
+                <span class="section-number">02.</span> <span data-i18n="section.servicios">Qué Ofrezco Hoy</span>
+            </h2>
+            <p class="section-subtitle reveal" data-i18n="section.servicios.subtitle">Servicios de consultoría orientados a resultados, combinando experiencia en gestión pública con tecnología de vanguardia.</p>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 data-i18n="svc1.title">Automatización con IA</h3>
+                    <p data-i18n="svc1.desc">Consultoría en automatización de procesos mediante inteligencia artificial para el sector público y privado. Optimización de flujos de trabajo y reducción de costos operativos.</p>
+                    <div class="service-tags">
+                        <span data-i18n="svc1.tag1">Sector Público</span>
+                        <span data-i18n="svc1.tag2">Automatización</span>
+                        <span>LLMs</span>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 data-i18n="svc2.title">Agentes & Chatbots IA</h3>
+                    <p data-i18n="svc2.desc">Diseño e implementación de agentes inteligentes y chatbots personalizados para atención al cliente, gestión interna y automatización de respuestas empresariales.</p>
+                    <div class="service-tags">
+                        <span>GPT / Claude</span>
+                        <span data-i18n="svc2.tag2">NLP</span>
+                        <span data-i18n="svc2.tag3">Integración API</span>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-i18n="svc3.title">Dashboards & Análisis de Datos</h3>
+                    <p data-i18n="svc3.desc">Creación de dashboards interactivos y análisis de datos avanzado para la toma de decisiones estratégicas. Visualización de KPIs y métricas de impacto.</p>
+                    <div class="service-tags">
+                        <span>Python</span>
+                        <span>Plotly / D3.js</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 data-i18n="svc4.title">Desarrollo de Aplicaciones Web</h3>
+                    <p data-i18n="svc4.desc">Desarrollo full stack de aplicaciones web a medida, desde plataformas de gestión hasta portales públicos con integración de datos y APIs.</p>
+                    <div class="service-tags">
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Dashboard Demo -->
+            <div class="dashboard-demo reveal">
+                <div class="dashboard-header">
+                    <div>
+                        <h3 data-i18n="dashboard.title">Demo: Mercado Laboral Chile</h3>
+                        <p data-i18n="dashboard.subtitle">Visualización interactiva de datos públicos de empleo — expertise BNE</p>
+                    </div>
+                    <div class="dashboard-badge">
+                        <i class="fas fa-circle status-dot"></i> <span data-i18n="dashboard.live">Datos ilustrativos</span>
+                    </div>
+                </div>
+                <div class="dashboard-charts">
+                    <div class="chart-container" id="chartEmployment"></div>
+                    <div class="chart-container" id="chartSectors"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experiencia">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">03.</span> <span data-i18n="section.experiencia">Experiencia Profesional</span>
             </h2>
             <div class="timeline">
                 <div class="timeline-item reveal">
@@ -299,10 +383,10 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section" id="habilidades">
+    <section class="section section-alt" id="habilidades">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">03.</span> <span data-i18n="section.competencias">Competencias</span>
+                <span class="section-number">04.</span> <span data-i18n="section.competencias">Competencias</span>
             </h2>
             <div class="skills-grid">
                 <div class="skill-category reveal">
@@ -417,11 +501,11 @@
         </div>
     </section>
 
-    <!-- Logros Section (was Projects) -->
-    <section class="section section-alt" id="logros">
+    <!-- Logros Section -->
+    <section class="section" id="logros">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">04.</span> <span data-i18n="section.logros">Logros Destacados</span>
+                <span class="section-number">05.</span> <span data-i18n="section.logros">Logros Destacados</span>
             </h2>
             <div class="projects-grid">
                 <div class="project-card reveal">
@@ -503,10 +587,10 @@
     </section>
 
     <!-- Education Section -->
-    <section class="section" id="educacion">
+    <section class="section section-alt" id="educacion">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">05.</span> <span data-i18n="section.educacion">Formación Académica</span>
+                <span class="section-number">06.</span> <span data-i18n="section.educacion">Formación Académica</span>
             </h2>
             <div class="education-grid">
                 <div class="education-card reveal">
@@ -570,10 +654,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section section-alt" id="contacto">
+    <section class="section" id="contacto">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">06.</span> <span data-i18n="nav.contacto">Contacto</span>
+                <span class="section-number">07.</span> <span data-i18n="nav.contacto">Contacto</span>
             </h2>
             <div class="contact-grid">
                 <div class="contact-info reveal">
@@ -598,6 +682,7 @@
                     </div>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/sergio-gustavo-herrera-toloza-90450932/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/chechoguz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/sherrera@fen.uchile.cl" method="POST">

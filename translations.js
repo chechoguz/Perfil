@@ -3,6 +3,7 @@ const translations = {
         // Nav
         "nav.inicio": "Inicio",
         "nav.sobre": "Sobre Mí",
+        "nav.servicios": "Servicios",
         "nav.experiencia": "Experiencia",
         "nav.habilidades": "Habilidades",
         "nav.logros": "Logros",
@@ -11,13 +12,15 @@ const translations = {
         // Hero
         "hero.badge": "Disponible para nuevos desafíos",
         "hero.greeting": "Hola, soy",
-        "hero.description": "Ingeniero en Información y Control de Gestión con más de 10 años liderando áreas de control de gestión, presupuestos y dirección de proyectos tecnológicos. Integrando analítica de datos avanzada con visión estratégica institucional.",
-        "hero.cta1": "Contáctame",
-        "hero.cta2": "Ver Logros",
+        "hero.description": "Consultor en Inteligencia Artificial & Data Science. Ex-Jefe de Departamento en la Bolsa Nacional de Empleo. Máster en IA & Machine Learning en Barcelona. Transformo datos en decisiones estratégicas y automatizo procesos con inteligencia artificial.",
+        "hero.cta1": "Ver Servicios",
+        "hero.cta2": "Contáctame",
         "hero.stat1": "Años de experiencia",
         "hero.stat2": "Instituciones lideradas",
         "hero.stat3": "Horas de formación técnica",
-        // Sections
+        // Section titles
+        "section.servicios": "Qué Ofrezco Hoy",
+        "section.servicios.subtitle": "Servicios de consultoría orientados a resultados, combinando experiencia en gestión pública con tecnología de vanguardia.",
         "section.experiencia": "Experiencia Profesional",
         "section.competencias": "Competencias",
         "section.logros": "Logros Destacados",
@@ -28,7 +31,24 @@ const translations = {
         "about.master": 'Actualmente estudiando <strong>Máster en Inteligencia Artificial & Machine Learning for Business</strong> - EAE.',
         "about.location": "Barcelona, España",
         "about.download": "Descargar CV",
-        // Experience 1 - BNE
+        // Services
+        "svc1.title": "Automatización con IA",
+        "svc1.desc": "Consultoría en automatización de procesos mediante inteligencia artificial para el sector público y privado. Optimización de flujos de trabajo y reducción de costos operativos.",
+        "svc1.tag1": "Sector Público",
+        "svc1.tag2": "Automatización",
+        "svc2.title": "Agentes & Chatbots IA",
+        "svc2.desc": "Diseño e implementación de agentes inteligentes y chatbots personalizados para atención al cliente, gestión interna y automatización de respuestas empresariales.",
+        "svc2.tag2": "NLP",
+        "svc2.tag3": "Integración API",
+        "svc3.title": "Dashboards & Análisis de Datos",
+        "svc3.desc": "Creación de dashboards interactivos y análisis de datos avanzado para la toma de decisiones estratégicas. Visualización de KPIs y métricas de impacto.",
+        "svc4.title": "Desarrollo de Aplicaciones Web",
+        "svc4.desc": "Desarrollo full stack de aplicaciones web a medida, desde plataformas de gestión hasta portales públicos con integración de datos y APIs.",
+        // Dashboard
+        "dashboard.title": "Demo: Mercado Laboral Chile",
+        "dashboard.subtitle": "Visualización interactiva de datos públicos de empleo — expertise BNE",
+        "dashboard.live": "Datos ilustrativos",
+        // Experience 1
         "exp1.title": "Jefe de Departamento BNE",
         "exp1.company": "Bolsa Nacional de Empleo — Subsecretaría del Trabajo",
         "exp1.date": "Mayo 2022 — Diciembre 2025",
@@ -37,7 +57,7 @@ const translations = {
         "exp1.tag2": "Licitaciones",
         "exp1.tag3": "Política IA",
         "exp1.tag4": "Gestión Pública",
-        // Experience 2 - Colegio Médico
+        // Experience 2
         "exp2.title": "Encargado de Procesos y Convenios",
         "exp2.company": "Colegio Médico de Chile A.G.",
         "exp2.date": "Septiembre 2019 — Enero 2022",
@@ -46,7 +66,7 @@ const translations = {
         "exp2.tag2": "Firma Electrónica",
         "exp2.tag3": "Convenios",
         "exp2.tag4": "Estandarización",
-        // Experience 3 - Agencia Calidad
+        // Experience 3
         "exp3.title": "Ingeniero de Planificación",
         "exp3.company": "Agencia de Calidad de la Educación",
         "exp3.date": "Febrero 2019 — Agosto 2019",
@@ -54,14 +74,14 @@ const translations = {
         "exp3.tag1": "Planificación",
         "exp3.tag2": "Control Operativo",
         "exp3.tag3": "Calidad Educativa",
-        // Experience 4 - Registro Civil
+        // Experience 4
         "exp4.title": "Encargado de Operaciones / Planificación y Control de Gestión",
         "exp4.company": "Servicio de Registro Civil e Identificación",
         "exp4.date": "Abril 2016 — Junio 2018",
         "exp4.desc": "Monitoreo y seguimiento de metas institucionales mediante CMI, Alta Dirección Pública y PMG. Gestión de cartera de proyectos con plataformas BIP y Chile Indica. Supervisión de oficinas regionales y capacitación en reglamentos y manuales de procesos.",
         "exp4.tag3": "Proyectos BIP",
         "exp4.tag4": "Operaciones",
-        // Experience 5 - SVS
+        // Experience 5
         "exp5.title": "Analista de Control de Gestión y Procesos",
         "exp5.company": "SVS / Univ. de Viña del Mar / Cepech",
         "exp5.date": "Mayo 2012 — Febrero 2015",
@@ -128,7 +148,6 @@ const translations = {
         "contact.location.label": "Ubicación",
         "contact.location.value": "Barcelona, España",
         "contact.send": "Enviar Mensaje",
-        // Form
         "form.name": "Nombre completo",
         "form.subject": "Asunto",
         "form.message": "Mensaje",
@@ -138,17 +157,18 @@ const translations = {
         "footer.copyright": "\u00A9 2026 — Todos los derechos reservados",
         // Typewriter
         "typewriter": [
-            "Ingeniero en Control de Gestión",
-            "Data Science & Python",
-            "Desarrollador Full Stack JavaScript",
-            "Líder de Equipos Multidisciplinarios",
-            "Gestión Estratégica & Innovación"
+            "Consultor IA & Data Science",
+            "Ex-Jefe Dpto. BNE — Gobierno de Chile",
+            "Máster IA & Machine Learning — Barcelona",
+            "Automatización con Inteligencia Artificial",
+            "Dashboards & Analítica Avanzada"
         ]
     },
     ca: {
         // Nav
         "nav.inicio": "Inici",
         "nav.sobre": "Sobre Mi",
+        "nav.servicios": "Serveis",
         "nav.experiencia": "Experiència",
         "nav.habilidades": "Habilitats",
         "nav.logros": "Assoliments",
@@ -157,13 +177,15 @@ const translations = {
         // Hero
         "hero.badge": "Disponible per a nous reptes",
         "hero.greeting": "Hola, soc",
-        "hero.description": "Enginyer en Informació i Control de Gestió amb més de 10 anys liderant àrees de control de gestió, pressupostos i direcció de projectes tecnològics. Integrant analítica de dades avançada amb visió estratègica institucional.",
-        "hero.cta1": "Contacta'm",
-        "hero.cta2": "Veure Assoliments",
+        "hero.description": "Consultor en Intel·ligència Artificial & Data Science. Ex-Cap de Departament a la Borsa Nacional d'Ocupació. Màster en IA & Machine Learning a Barcelona. Transformo dades en decisions estratègiques i automatitzo processos amb intel·ligència artificial.",
+        "hero.cta1": "Veure Serveis",
+        "hero.cta2": "Contacta'm",
         "hero.stat1": "Anys d'experiència",
         "hero.stat2": "Institucions liderades",
         "hero.stat3": "Hores de formació tècnica",
-        // Sections
+        // Section titles
+        "section.servicios": "Què Ofereixo Avui",
+        "section.servicios.subtitle": "Serveis de consultoria orientats a resultats, combinant experiència en gestió pública amb tecnologia d'avantguarda.",
         "section.experiencia": "Experiència Professional",
         "section.competencias": "Competències",
         "section.logros": "Assoliments Destacats",
@@ -174,7 +196,24 @@ const translations = {
         "about.master": "Actualment estudiant <strong>Màster en Intel·ligència Artificial & Machine Learning for Business</strong> - EAE.",
         "about.location": "Barcelona, Espanya",
         "about.download": "Descarregar CV",
-        // Experience 1 - BNE
+        // Services
+        "svc1.title": "Automatització amb IA",
+        "svc1.desc": "Consultoria en automatització de processos mitjançant intel·ligència artificial per al sector públic i privat. Optimització de fluxos de treball i reducció de costos operatius.",
+        "svc1.tag1": "Sector Públic",
+        "svc1.tag2": "Automatització",
+        "svc2.title": "Agents & Chatbots IA",
+        "svc2.desc": "Disseny i implementació d'agents intel·ligents i chatbots personalitzats per a atenció al client, gestió interna i automatització de respostes empresarials.",
+        "svc2.tag2": "NLP",
+        "svc2.tag3": "Integració API",
+        "svc3.title": "Dashboards & Anàlisi de Dades",
+        "svc3.desc": "Creació de dashboards interactius i anàlisi de dades avançada per a la presa de decisions estratègiques. Visualització de KPIs i mètriques d'impacte.",
+        "svc4.title": "Desenvolupament d'Aplicacions Web",
+        "svc4.desc": "Desenvolupament full stack d'aplicacions web a mida, des de plataformes de gestió fins a portals públics amb integració de dades i APIs.",
+        // Dashboard
+        "dashboard.title": "Demo: Mercat Laboral Xile",
+        "dashboard.subtitle": "Visualització interactiva de dades públiques d'ocupació — expertise BNE",
+        "dashboard.live": "Dades il·lustratives",
+        // Experience 1
         "exp1.title": "Cap de Departament BNE",
         "exp1.company": "Borsa Nacional d'Ocupació — Subsecretaria del Treball",
         "exp1.date": "Maig 2022 — Desembre 2025",
@@ -183,7 +222,7 @@ const translations = {
         "exp1.tag2": "Licitacions",
         "exp1.tag3": "Política IA",
         "exp1.tag4": "Gestió Pública",
-        // Experience 2 - Colegio Médico
+        // Experience 2
         "exp2.title": "Encarregat de Processos i Convenis",
         "exp2.company": "Col·legi Mèdic de Xile A.G.",
         "exp2.date": "Setembre 2019 — Gener 2022",
@@ -192,7 +231,7 @@ const translations = {
         "exp2.tag2": "Signatura Electrònica",
         "exp2.tag3": "Convenis",
         "exp2.tag4": "Estandardització",
-        // Experience 3 - Agencia Calidad
+        // Experience 3
         "exp3.title": "Enginyer de Planificació",
         "exp3.company": "Agència de Qualitat de l'Educació",
         "exp3.date": "Febrer 2019 — Agost 2019",
@@ -200,14 +239,14 @@ const translations = {
         "exp3.tag1": "Planificació",
         "exp3.tag2": "Control Operatiu",
         "exp3.tag3": "Qualitat Educativa",
-        // Experience 4 - Registro Civil
+        // Experience 4
         "exp4.title": "Encarregat d'Operacions / Planificació i Control de Gestió",
         "exp4.company": "Servei de Registre Civil i Identificació",
         "exp4.date": "Abril 2016 — Juny 2018",
         "exp4.desc": "Monitoratge i seguiment de metes institucionals mitjançant CMI, Alta Direcció Pública i PMG. Gestió de cartera de projectes amb plataformes BIP i Chile Indica. Supervisió d'oficines regionals i capacitació en reglaments i manuals de processos.",
         "exp4.tag3": "Projectes BIP",
         "exp4.tag4": "Operacions",
-        // Experience 5 - SVS
+        // Experience 5
         "exp5.title": "Analista de Control de Gestió i Processos",
         "exp5.company": "SVS / Univ. de Viña del Mar / Cepech",
         "exp5.date": "Maig 2012 — Febrer 2015",
@@ -274,7 +313,6 @@ const translations = {
         "contact.location.label": "Ubicació",
         "contact.location.value": "Barcelona, Espanya",
         "contact.send": "Enviar Missatge",
-        // Form
         "form.name": "Nom complet",
         "form.subject": "Assumpte",
         "form.message": "Missatge",
@@ -284,17 +322,18 @@ const translations = {
         "footer.copyright": "\u00A9 2026 — Tots els drets reservats",
         // Typewriter
         "typewriter": [
-            "Enginyer en Control de Gestió",
-            "Data Science & Python",
-            "Desenvolupador Full Stack JavaScript",
-            "Líder d'Equips Multidisciplinaris",
-            "Gestió Estratègica & Innovació"
+            "Consultor IA & Data Science",
+            "Ex-Cap Dpt. BNE — Govern de Xile",
+            "Màster IA & Machine Learning — Barcelona",
+            "Automatització amb Intel·ligència Artificial",
+            "Dashboards & Analítica Avançada"
         ]
     },
     en: {
         // Nav
         "nav.inicio": "Home",
         "nav.sobre": "About Me",
+        "nav.servicios": "Services",
         "nav.experiencia": "Experience",
         "nav.habilidades": "Skills",
         "nav.logros": "Achievements",
@@ -303,13 +342,15 @@ const translations = {
         // Hero
         "hero.badge": "Open to new challenges",
         "hero.greeting": "Hi, I'm",
-        "hero.description": "Information and Management Control Engineer with over 10 years leading management control, budgeting, and technology project management. Integrating advanced data analytics with institutional strategic vision.",
-        "hero.cta1": "Contact Me",
-        "hero.cta2": "View Achievements",
+        "hero.description": "AI & Data Science Consultant. Former Head of Department at Chile's National Employment Exchange. Master's in AI & Machine Learning in Barcelona. I turn data into strategic decisions and automate processes with artificial intelligence.",
+        "hero.cta1": "View Services",
+        "hero.cta2": "Contact Me",
         "hero.stat1": "Years of experience",
         "hero.stat2": "Institutions led",
         "hero.stat3": "Hours of technical training",
-        // Sections
+        // Section titles
+        "section.servicios": "What I Offer Today",
+        "section.servicios.subtitle": "Results-oriented consulting services, combining public sector expertise with cutting-edge technology.",
         "section.experiencia": "Professional Experience",
         "section.competencias": "Skills & Competencies",
         "section.logros": "Key Achievements",
@@ -320,7 +361,24 @@ const translations = {
         "about.master": 'Currently studying <strong>Master\'s in Artificial Intelligence & Machine Learning for Business</strong> - EAE.',
         "about.location": "Barcelona, Spain",
         "about.download": "Download CV",
-        // Experience 1 - BNE
+        // Services
+        "svc1.title": "AI Automation",
+        "svc1.desc": "Process automation consulting through artificial intelligence for the public and private sectors. Workflow optimization and operational cost reduction.",
+        "svc1.tag1": "Public Sector",
+        "svc1.tag2": "Automation",
+        "svc2.title": "AI Agents & Chatbots",
+        "svc2.desc": "Design and implementation of intelligent agents and custom chatbots for customer service, internal management, and enterprise response automation.",
+        "svc2.tag2": "NLP",
+        "svc2.tag3": "API Integration",
+        "svc3.title": "Dashboards & Data Analysis",
+        "svc3.desc": "Creation of interactive dashboards and advanced data analysis for strategic decision-making. KPI visualization and impact metrics.",
+        "svc4.title": "Web Application Development",
+        "svc4.desc": "Full stack custom web application development, from management platforms to public portals with data and API integration.",
+        // Dashboard
+        "dashboard.title": "Demo: Chile Labor Market",
+        "dashboard.subtitle": "Interactive visualization of public employment data — BNE expertise",
+        "dashboard.live": "Illustrative data",
+        // Experience 1
         "exp1.title": "Head of BNE Department",
         "exp1.company": "National Employment Exchange — Undersecretariat of Labor",
         "exp1.date": "May 2022 — December 2025",
@@ -329,7 +387,7 @@ const translations = {
         "exp1.tag2": "Procurement",
         "exp1.tag3": "AI Policy",
         "exp1.tag4": "Public Management",
-        // Experience 2 - Colegio Médico
+        // Experience 2
         "exp2.title": "Process and Agreements Manager",
         "exp2.company": "Chilean Medical Association",
         "exp2.date": "September 2019 — January 2022",
@@ -338,7 +396,7 @@ const translations = {
         "exp2.tag2": "E-Signature",
         "exp2.tag3": "Agreements",
         "exp2.tag4": "Standardization",
-        // Experience 3 - Agencia Calidad
+        // Experience 3
         "exp3.title": "Planning Engineer",
         "exp3.company": "Education Quality Agency",
         "exp3.date": "February 2019 — August 2019",
@@ -346,14 +404,14 @@ const translations = {
         "exp3.tag1": "Planning",
         "exp3.tag2": "Operational Control",
         "exp3.tag3": "Education Quality",
-        // Experience 4 - Registro Civil
+        // Experience 4
         "exp4.title": "Operations / Planning and Management Control Manager",
         "exp4.company": "Civil Registry and Identification Service",
         "exp4.date": "April 2016 — June 2018",
         "exp4.desc": "Monitoring and tracking of institutional goals through BSC, Senior Public Management, and PMG. Project portfolio management with BIP and Chile Indica platforms. Regional office supervision and training on regulations and process manuals.",
         "exp4.tag3": "BIP Projects",
         "exp4.tag4": "Operations",
-        // Experience 5 - SVS
+        // Experience 5
         "exp5.title": "Management Control and Process Analyst",
         "exp5.company": "SVS / Univ. de Viña del Mar / Cepech",
         "exp5.date": "May 2012 — February 2015",
@@ -420,7 +478,6 @@ const translations = {
         "contact.location.label": "Location",
         "contact.location.value": "Barcelona, Spain",
         "contact.send": "Send Message",
-        // Form
         "form.name": "Full name",
         "form.subject": "Subject",
         "form.message": "Message",
@@ -430,11 +487,11 @@ const translations = {
         "footer.copyright": "\u00A9 2026 — All rights reserved",
         // Typewriter
         "typewriter": [
-            "Management Control Engineer",
-            "Data Science & Python",
-            "Full Stack JavaScript Developer",
-            "Multidisciplinary Team Leader",
-            "Strategic Management & Innovation"
+            "AI & Data Science Consultant",
+            "Former Head of Dept. BNE — Government of Chile",
+            "Master's AI & Machine Learning — Barcelona",
+            "Automation with Artificial Intelligence",
+            "Dashboards & Advanced Analytics"
         ]
     }
 };
