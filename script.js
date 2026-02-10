@@ -28,6 +28,8 @@ function applyTranslations(lang) {
         isDeleting = false;
     }
     document.documentElement.lang = lang === 'es' ? 'es' : lang === 'ca' ? 'ca' : 'en';
+    // Re-render charts with new language
+    if (typeof Plotly !== 'undefined') initDashboard();
 }
 
 langToggle.addEventListener('click', (e) => {
@@ -419,11 +421,38 @@ projectCards.forEach((card) => {
 // =========================================
 // Interactive Dashboard (Plotly)
 // =========================================
+const chartTranslations = {
+    es: {
+        months: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+        vacantes: 'Vacantes', colocaciones: 'Colocaciones',
+        chartTitle1: 'Vacantes y Colocaciones BNE', yAxis: 'Cantidad',
+        chartTitle2: 'Distribución por Sector Económico',
+        sectors: ['Comercio', 'Servicios', 'Industria', 'Construcción', 'Tecnología', 'Salud', 'Educación', 'Otros'],
+    },
+    ca: {
+        months: ['Gen', 'Feb', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Oct', 'Nov', 'Des'],
+        vacantes: 'Vacants', colocaciones: 'Col·locacions',
+        chartTitle1: 'Vacants i Col·locacions BNE', yAxis: 'Quantitat',
+        chartTitle2: 'Distribució per Sector Econòmic',
+        sectors: ['Comerç', 'Serveis', 'Indústria', 'Construcció', 'Tecnologia', 'Salut', 'Educació', 'Altres'],
+    },
+    en: {
+        months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        vacantes: 'Job Openings', colocaciones: 'Placements',
+        chartTitle1: 'Job Openings & Placements BNE', yAxis: 'Count',
+        chartTitle2: 'Distribution by Economic Sector',
+        sectors: ['Commerce', 'Services', 'Industry', 'Construction', 'Technology', 'Health', 'Education', 'Other'],
+    },
+};
+
 function initDashboard() {
     if (typeof Plotly === 'undefined') {
         setTimeout(initDashboard, 500);
         return;
     }
+
+    const lang = localStorage.getItem('lang') || 'es';
+    const ct = chartTranslations[lang] || chartTranslations.es;
 
     const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
     const colors = {
@@ -446,44 +475,42 @@ function initDashboard() {
     };
 
     // Chart 1: Employment trends
-    const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
     const vacantes2024 = [42300, 45100, 48200, 51800, 49700, 46300, 44800, 47200, 50600, 53100, 55400, 52800];
     const vacantes2025 = [48700, 51200, 54800, 58300, 56100, 53400, 51900, 54700, 58200, 61500, 63800, 60200];
     const colocaciones = [28400, 30200, 32500, 34900, 33100, 31200, 30100, 31800, 34200, 35800, 37200, 35600];
 
     Plotly.newPlot('chartEmployment', [
         {
-            x: months, y: vacantes2024, name: 'Vacantes 2024',
+            x: ct.months, y: vacantes2024, name: ct.vacantes + ' 2024',
             type: 'scatter', mode: 'lines+markers',
             line: { color: colors.accent, width: 2.5 },
             marker: { size: 5 },
         },
         {
-            x: months, y: vacantes2025, name: 'Vacantes 2025',
+            x: ct.months, y: vacantes2025, name: ct.vacantes + ' 2025',
             type: 'scatter', mode: 'lines+markers',
             line: { color: colors.accent2, width: 2.5 },
             marker: { size: 5 },
         },
         {
-            x: months, y: colocaciones, name: 'Colocaciones',
+            x: ct.months, y: colocaciones, name: ct.colocaciones,
             type: 'bar',
             marker: { color: colors.accent3, opacity: 0.4 },
         },
     ], {
         ...layout,
-        title: { text: 'Vacantes y Colocaciones BNE', font: { size: 14, weight: 600 } },
-        yaxis: { ...layout.yaxis, title: 'Cantidad' },
+        title: { text: ct.chartTitle1, font: { size: 14, weight: 600 } },
+        yaxis: { ...layout.yaxis, title: ct.yAxis },
         legend: { orientation: 'h', y: -0.2, x: 0.5, xanchor: 'center', font: { size: 11 } },
         barmode: 'overlay',
     }, { responsive: true, displayModeBar: false });
 
     // Chart 2: Sectors donut
-    const sectors = ['Comercio', 'Servicios', 'Industria', 'Construcción', 'Tecnología', 'Salud', 'Educación', 'Otros'];
     const values = [22, 19, 15, 12, 11, 8, 7, 6];
     const sectorColors = [colors.accent, colors.accent2, colors.accent3, colors.accent4, '#ec4899', '#06b6d4', '#8b5cf6', '#64748b'];
 
     Plotly.newPlot('chartSectors', [{
-        labels: sectors,
+        labels: ct.sectors,
         values: values,
         type: 'pie',
         hole: 0.55,
@@ -494,7 +521,7 @@ function initDashboard() {
         hoverinfo: 'label+value+percent',
     }], {
         ...layout,
-        title: { text: 'Distribución por Sector Económico', font: { size: 14, weight: 600 } },
+        title: { text: ct.chartTitle2, font: { size: 14, weight: 600 } },
         showlegend: false,
         margin: { t: 50, r: 50, b: 30, l: 50 },
     }, { responsive: true, displayModeBar: false });
