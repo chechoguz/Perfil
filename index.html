@@ -3,735 +3,669 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio Herrera Toloza — Consultor IA & Data</title>
+    <title>Sergio Herrera Toloza — Jefe de Proyecto TI</title>
+    <meta name="description" content="Sergio Herrera Toloza — Jefe de Proyecto TI con más de 10 años en gestión pública en Chile. Dirigí la licitación de 8 M€ del portal nacional de empleo. Máster en IA para los Negocios. Barcelona y Chile en remoto.">
+    <link rel="canonical" href="https://chechoguz.github.io/Perfil/">
+    <link rel="alternate" hreflang="es" href="https://chechoguz.github.io/Perfil/">
+    <link rel="alternate" hreflang="ca" href="https://chechoguz.github.io/Perfil/?lang=ca">
+    <link rel="alternate" hreflang="en" href="https://chechoguz.github.io/Perfil/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://chechoguz.github.io/Perfil/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Sergio Herrera Toloza — Jefe de Proyecto TI">
+    <meta property="og:description" content="Gestión pública, licitaciones TI y Data Science. Del portal nacional de empleo de Chile a Barcelona.">
+    <meta property="og:image" content="https://chechoguz.github.io/Perfil/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://chechoguz.github.io/Perfil/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sergio Herrera Toloza — Jefe de Proyecto TI">
+    <meta name="twitter:description" content="Gestión pública, licitaciones TI y Data Science. Del portal nacional de empleo de Chile a Barcelona.">
+    <meta name="twitter:image" content="https://chechoguz.github.io/Perfil/assets/og-image.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sergio Herrera Toloza",
+      "jobTitle": "Jefe de Proyecto TI",
+      "url": "https://chechoguz.github.io/Perfil/",
+      "email": "mailto:sherrera@fen.uchile.cl",
+      "image": "https://chechoguz.github.io/Perfil/assets/profile.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Barcelona",
+        "addressCountry": "ES"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Universidad de Chile" },
+        { "@type": "CollegeOrUniversity", "name": "EAE Business School" }
+      ],
+      "knowsAbout": [
+        "Gestión de proyectos TI", "Licitaciones públicas", "Gestión pública",
+        "Control de gestión", "Data Science", "Machine Learning",
+        "Política de inteligencia artificial"
+      ],
+      "knowsLanguage": ["es", "en"],
+      "sameAs": [
+        "https://www.linkedin.com/in/sergio-gustavo-herrera-toloza-90450932/"
+      ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
 </head>
 <body>
-    <!-- Cursor glow effect -->
+    <a class="skip-link" href="#contenido" data-i18n="skip">Saltar al contenido</a>
     <div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-brand">
+        <div class="nav-brand" aria-hidden="true">
             <span class="brand-accent">&lt;</span>SHT<span class="brand-accent">/&gt;</span>
         </div>
         <ul class="nav-links">
-            <li><a href="#inicio" class="nav-link active" data-i18n="nav.inicio">Inicio</a></li>
-            <li><a href="#sobre-mi" class="nav-link" data-i18n="nav.sobre">Sobre Mí</a></li>
-            <li><a href="#servicios" class="nav-link" data-i18n="nav.servicios">Servicios</a></li>
-            <li><a href="#experiencia" class="nav-link" data-i18n="nav.experiencia">Experiencia</a></li>
-            <li><a href="#habilidades" class="nav-link" data-i18n="nav.habilidades">Habilidades</a></li>
-            <li><a href="#logros" class="nav-link" data-i18n="nav.logros">Logros</a></li>
-            <li><a href="#educacion" class="nav-link" data-i18n="nav.educacion">Educación</a></li>
-            <li><a href="#contacto" class="nav-link" data-i18n="nav.contacto">Contacto</a></li>
+            <li><a href="#sobre-mi" class="nav-link" data-i18n="nav.about">Sobre mí</a></li>
+            <li><a href="#aporto" class="nav-link" data-i18n="nav.impact">Cómo aporto</a></li>
+            <li><a href="#experiencia" class="nav-link" data-i18n="nav.experience">Experiencia</a></li>
+            <li><a href="#competencias" class="nav-link" data-i18n="nav.skills">Competencias</a></li>
+            <li><a href="#logros" class="nav-link" data-i18n="nav.achievements">Logros</a></li>
+            <li><a href="#formacion" class="nav-link" data-i18n="nav.education">Formación</a></li>
+            <li><a href="#mercado-laboral" class="nav-link" data-i18n="nav.data">Mercado laboral</a></li>
+            <li><a href="#notas" class="nav-link nav-notes" hidden data-i18n="nav.notes">Notas</a></li>
+            <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
         </ul>
         <div class="nav-actions">
             <div class="hero-social-links">
-                <a href="https://www.linkedin.com/in/sergio-gustavo-herrera-toloza-90450932/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/chechoguz" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sergio-gustavo-herrera-toloza-90450932/" target="_blank" rel="noopener noreferrer" class="hero-social-link" data-track="clic_linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
             </div>
             <div class="lang-selector" id="langSelector">
-                <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
-                    <i class="fas fa-globe"></i>
+                <button class="lang-toggle" id="langToggle" type="button" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria="lang.label" aria-label="Idioma">
+                    <i class="fas fa-globe" aria-hidden="true"></i>
                     <span class="lang-current">ES</span>
-                    <i class="fas fa-chevron-down lang-arrow"></i>
+                    <i class="fas fa-chevron-down lang-arrow" aria-hidden="true"></i>
                 </button>
-                <div class="lang-dropdown" id="langDropdown">
-                    <button class="lang-option active" data-lang="es">Castellano</button>
-                    <button class="lang-option" data-lang="ca">Català</button>
-                    <button class="lang-option" data-lang="en">English</button>
+                <div class="lang-dropdown" id="langDropdown" role="listbox">
+                    <button class="lang-option active" type="button" data-lang="es" aria-current="true">Castellano</button>
+                    <button class="lang-option" type="button" data-lang="ca">Català</button>
+                    <button class="lang-option" type="button" data-lang="en">English</button>
                 </div>
             </div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-                <i class="fas fa-moon"></i>
+            <button class="theme-toggle" id="themeToggle" type="button" data-i18n-aria="theme.label" aria-label="Cambiar tema">
+                <i class="fas fa-moon" aria-hidden="true"></i>
             </button>
         </div>
-        <button class="nav-hamburger" id="navHamburger" aria-label="Menú">
+        <button class="nav-hamburger" id="navHamburger" type="button" aria-controls="mobileMenu" aria-expanded="false" data-i18n-aria="menu.label" aria-label="Menú">
             <span></span><span></span><span></span>
         </button>
     </nav>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <ul class="mobile-nav-links">
-            <li><a href="#inicio" class="mobile-nav-link" data-i18n="nav.inicio">Inicio</a></li>
-            <li><a href="#sobre-mi" class="mobile-nav-link" data-i18n="nav.sobre">Sobre Mí</a></li>
-            <li><a href="#servicios" class="mobile-nav-link" data-i18n="nav.servicios">Servicios</a></li>
-            <li><a href="#experiencia" class="mobile-nav-link" data-i18n="nav.experiencia">Experiencia</a></li>
-            <li><a href="#habilidades" class="mobile-nav-link" data-i18n="nav.habilidades">Habilidades</a></li>
-            <li><a href="#logros" class="mobile-nav-link" data-i18n="nav.logros">Logros</a></li>
-            <li><a href="#educacion" class="mobile-nav-link" data-i18n="nav.educacion">Educación</a></li>
-            <li><a href="#contacto" class="mobile-nav-link" data-i18n="nav.contacto">Contacto</a></li>
+            <li><a href="#sobre-mi" class="mobile-nav-link" data-i18n="nav.about">Sobre mí</a></li>
+            <li><a href="#aporto" class="mobile-nav-link" data-i18n="nav.impact">Cómo aporto</a></li>
+            <li><a href="#experiencia" class="mobile-nav-link" data-i18n="nav.experience">Experiencia</a></li>
+            <li><a href="#competencias" class="mobile-nav-link" data-i18n="nav.skills">Competencias</a></li>
+            <li><a href="#logros" class="mobile-nav-link" data-i18n="nav.achievements">Logros</a></li>
+            <li><a href="#formacion" class="mobile-nav-link" data-i18n="nav.education">Formación</a></li>
+            <li><a href="#mercado-laboral" class="mobile-nav-link" data-i18n="nav.data">Mercado laboral</a></li>
+            <li><a href="#notas" class="mobile-nav-link nav-notes" hidden data-i18n="nav.notes">Notas</a></li>
+            <li><a href="#contacto" class="mobile-nav-link" data-i18n="nav.contact">Contacto</a></li>
         </ul>
     </div>
 
-    <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="hero-particles" id="heroParticles"></div>
         <div class="hero-content">
             <div class="hero-badge reveal">
-                <i class="fas fa-circle status-dot"></i> <span data-i18n="hero.badge">Disponible para nuevos desafíos</span>
+                <i class="fas fa-circle status-dot" aria-hidden="true"></i> <span data-i18n="hero.badge">Disponible ahora · Barcelona presencial/híbrido · Chile en remoto</span>
             </div>
             <h1 class="hero-title reveal">
-                <span class="greeting" data-i18n="hero.greeting">Hola, soy</span>
                 <span class="name-line">
                     <span class="first-name">Sergio</span>
                     <span class="last-name">Herrera Toloza</span>
                 </span>
             </h1>
-            <div class="hero-typewriter reveal">
+            <h2 class="hero-role reveal" data-i18n="hero.role">Jefe de Proyecto TI · Gestión Pública · Data Science & IA</h2>
+            <div class="hero-typewriter reveal" aria-live="off">
                 <span class="typewriter-prefix">$ </span>
-                <span class="typewriter-text" id="typewriter"></span>
+                <span class="typewriter-text" id="typewriter">dirigiendo la licitación del portal de empleo de un país</span>
                 <span class="typewriter-cursor">|</span>
             </div>
-            <p class="hero-description reveal" data-i18n="hero.description">
-                Consultor en Inteligencia Artificial & Data Science. Ex-Jefe de Departamento en la Bolsa Nacional de Empleo.
-                Máster en IA & Machine Learning en Barcelona. Transformo datos en decisiones estratégicas
-                y automatizo procesos con inteligencia artificial.
+            <p class="hero-description reveal" data-i18n="hero.body">
+                Más de 10 años dirigiendo proyectos TI y transformación digital en la administración pública chilena, 6 de ellos en cargos de dirección. Dirigí la licitación de más de 8 M€ de la Bolsa Nacional de Empleo 2025–2029 y participé en la actualización de la Política Nacional de IA de Chile. Máster en IA para los Negocios (EAE, Barcelona): gestión estratégica de alto nivel con capacidad técnica real para convertir inversión tecnológica en impacto medible.
             </p>
             <div class="hero-cta reveal">
-                <a href="#servicios" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i> <span data-i18n="hero.cta1">Ver Servicios</span>
+                <a href="assets/cv/Sergio_Herrera_CV_JefeProyectoTI_ES_Barcelona.pdf" class="btn btn-primary" id="cv-primario" download data-track="descarga_cv" data-cv="es-barcelona">
+                    <i class="fas fa-download" aria-hidden="true"></i> <span data-i18n="cta.cv">Descargar CV (España)</span>
                 </a>
-                <a href="#contacto" class="btn btn-outline">
-                    <i class="fas fa-paper-plane"></i> <span data-i18n="hero.cta2">Contáctame</span>
+                <a href="#contacto" class="btn btn-outline" id="cta-hablemos">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="cta.talk">Hablemos</span>
                 </a>
             </div>
+            <a href="assets/cv/Sergio_Herrera_CV_JefeProyectoTI_ES_Santiago.pdf" class="cv-secondary reveal" id="cv-secundario" download data-track="descarga_cv" data-cv="es-santiago" data-i18n="cta.cvSecondary">¿Buscas el CV para Chile?</a>
             <div class="hero-stats reveal">
                 <div class="stat">
-                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label" data-i18n="hero.stat1">Años de experiencia</span>
+                    <span class="counter" data-target="10" data-suffix="+">10+</span>
+                    <span class="stat-label" data-i18n="hero.stat1">años de experiencia</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label" data-i18n="hero.stat2">Instituciones lideradas</span>
+                    <span class="counter" data-target="6" data-suffix="">6</span>
+                    <span class="stat-label" data-i18n="hero.stat2">años en cargos de dirección</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number" data-target="794">0</span><span class="stat-suffix"></span>
-                    <span class="stat-label" data-i18n="hero.stat3">Horas de formación técnica</span>
+                    <span class="counter" data-target="8" data-suffix="M€+">8M€+</span>
+                    <span class="stat-label" data-i18n="hero.stat3">licitación pública dirigida</span>
+                </div>
+                <div class="stat">
+                    <span class="counter" data-target="500" data-suffix="k+">500k+</span>
+                    <span class="stat-label" data-i18n="hero.stat4">usuarios del portal gestionado</span>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="mouse-wheel"></div>
-            </div>
-            <span>Scroll</span>
         </div>
     </section>
 
-    <!-- About Section -->
+    <main id="contenido">
     <section class="section" id="sobre-mi">
         <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">01.</span> <span data-i18n="nav.sobre">Sobre Mí</span>
-            </h2>
+            <h2 class="section-title reveal" data-i18n="section.about">Sobre mí</h2>
             <div class="about-grid">
                 <div class="about-image reveal">
                     <div class="image-frame">
                         <div class="image-placeholder">
-                            <img src="assets/profile.jpg" alt="Sergio Herrera Toloza" class="profile-photo">
+                            <picture>
+                                <source srcset="assets/profile.webp" type="image/webp">
+                                <img src="assets/profile.jpg" alt="Sergio Herrera Toloza" class="profile-photo" width="250" height="300" loading="lazy">
+                            </picture>
                         </div>
                         <div class="image-decoration"></div>
                     </div>
                 </div>
                 <div class="about-text reveal">
-                    <p data-i18n-html="about.p1">
-                        Ingeniero en Información y Control de Gestión de la <strong>Universidad de Chile</strong>
-                        con más de 10 años de trayectoria liderando áreas de control de gestión, presupuestos
-                        y dirección de proyectos en los sectores público y privado.
-                    </p>
-                    <p data-i18n-html="about.p2">
-                        Especialista en el cumplimiento de planes estratégicos mediante un enfoque de
-                        innovación, mejora continua y liderazgo de equipos multidisciplinarios. Poseo una
-                        formación técnica avanzada en <strong>Data Science (Python)</strong> y
-                        <strong>Desarrollo Full Stack (JavaScript)</strong>, lo que me permite integrar
-                        analítica de datos avanzada en la gestión institucional.
-                    </p>
-                    <p data-i18n-html="about.master">
-                        Actualmente estudiando <strong>Máster en Inteligencia Artificial & Machine Learning for Business</strong> - EAE.
-                    </p>
+                    <p data-i18n-html="about.p1">Ingeniero en Información y Control de Gestión de la <strong>Universidad de Chile</strong> con más de 10 años dirigiendo proyectos TI y transformación digital en la administración pública, 6 de ellos en cargos de dirección.</p>
+                    <p data-i18n-html="about.p2">Esa combinación —gestión pública de alto nivel, capacidad técnica real para construir los modelos, y doble mercado Chile–UE— es el criterio que llevo a un equipo desde el primer día.</p>
+                    <p data-i18n-html="about.p3"><strong>Máster en Inteligencia Artificial para los Negocios</strong> (EAE Business School, Barcelona, 2025–2026, completado).</p>
+                    <p class="availability" data-i18n-html="about.availability"><strong>Disponibilidad</strong> · Barcelona (presencial o híbrido) y Chile en remoto. Incorporación inmediata.</p>
                     <div class="about-details">
                         <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <span data-i18n="about.location">Barcelona, España</span>
                         </div>
                         <div class="detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>sherrera@fen.uchile.cl</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-university"></i>
-                            <span>Universidad de Chile — FEN</span>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:sherrera@fen.uchile.cl">sherrera@fen.uchile.cl</a>
                         </div>
                     </div>
-                    <a href="assets/Sergio_Herrera_Toloza_CV.pdf" download class="btn btn-primary" id="downloadCV">
-                        <i class="fas fa-download"></i> <span data-i18n="about.download">Descargar CV</span>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="section section-alt" id="servicios">
+    <section class="section section-alt" id="aporto">
         <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">02.</span> <span data-i18n="section.servicios">Qué Ofrezco Hoy</span>
-            </h2>
-            <p class="section-subtitle reveal" data-i18n="section.servicios.subtitle">Servicios de consultoría orientados a resultados, combinando experiencia en gestión pública con tecnología de vanguardia.</p>
+            <h2 class="section-title reveal" data-i18n="section.impact">Cómo aporto</h2>
+            <p class="section-subtitle reveal" data-i18n="section.impact.sub">Lo que llevo a un equipo de proyecto desde el primer día.</p>
             <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3 data-i18n="svc1.title">Automatización con IA</h3>
-                    <p data-i18n="svc1.desc">Consultoría en automatización de procesos mediante inteligencia artificial para el sector público y privado. Optimización de flujos de trabajo y reducción de costos operativos.</p>
-                    <div class="service-tags">
-                        <span data-i18n="svc1.tag1">Sector Público</span>
-                        <span data-i18n="svc1.tag2">Automatización</span>
-                        <span>LLMs</span>
-                    </div>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h3 data-i18n="svc2.title">Agentes & Chatbots IA</h3>
-                    <p data-i18n="svc2.desc">Diseño e implementación de agentes inteligentes y chatbots personalizados para atención al cliente, gestión interna y automatización de respuestas empresariales.</p>
-                    <div class="service-tags">
-                        <span>GPT / Claude</span>
-                        <span data-i18n="svc2.tag2">NLP</span>
-                        <span data-i18n="svc2.tag3">Integración API</span>
-                    </div>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 data-i18n="svc3.title">Dashboards & Análisis de Datos</h3>
-                    <p data-i18n="svc3.desc">Creación de dashboards interactivos y análisis de datos avanzado para la toma de decisiones estratégicas. Visualización de KPIs y métricas de impacto.</p>
-                    <div class="service-tags">
-                        <span>Python</span>
-                        <span>Plotly / D3.js</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 data-i18n="svc4.title">Desarrollo de Aplicaciones Web</h3>
-                    <p data-i18n="svc4.desc">Desarrollo full stack de aplicaciones web a medida, desde plataformas de gestión hasta portales públicos con integración de datos y APIs.</p>
-                    <div class="service-tags">
-                        <span>JavaScript</span>
-                        <span>Node.js</span>
-                        <span>React</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Interactive Dashboard Demo -->
-            <div class="dashboard-demo reveal">
-                <div class="dashboard-header">
-                    <div>
-                        <h3 data-i18n="dashboard.title">Demo: Mercado Laboral Chile</h3>
-                        <p data-i18n="dashboard.subtitle">Visualización interactiva de datos públicos de empleo — expertise BNE</p>
-                    </div>
-                    <div class="dashboard-badge">
-                        <i class="fas fa-circle status-dot"></i> <span data-i18n="dashboard.live">Datos ilustrativos</span>
-                    </div>
-                </div>
-                <div class="dashboard-charts">
-                    <div class="chart-container" id="chartEmployment"></div>
-                    <div class="chart-container" id="chartSectors"></div>
-                </div>
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-diagram-project" aria-hidden="true"></i></div>
+                    <h3 data-i18n="impact1.title">Dirección de proyectos TI</h3>
+                    <p data-i18n="impact1.desc">Planificación, seguimiento y cierre de proyectos tecnológicos en entornos regulados. Gestión de cartera, control de alcance y presupuesto, y reporte a alta dirección.</p>
+                    <div class="service-tags"><span>PMBOK</span><span>Agile</span><span>Cartera de proyectos</span><span>CMI</span></div>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-file-signature" aria-hidden="true"></i></div>
+                    <h3 data-i18n="impact2.title">Licitaciones y gestión de proveedores</h3>
+                    <p data-i18n="impact2.desc">Dirección de procesos de licitación pública y administración de contratos con proveedores TI, desde las bases técnicas hasta la continuidad operativa del servicio adjudicado.</p>
+                    <div class="service-tags"><span>ChileCompra / BID</span><span>Bases técnicas</span><span>Contratos TI</span></div>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                    <h3 data-i18n="impact3.title">Datos para decidir</h3>
+                    <p data-i18n="impact3.desc">Definición de indicadores, tableros de seguimiento y análisis que convierten la operación en decisiones defendibles ante un comité.</p>
+                    <div class="service-tags"><span>Python</span><span>SQL</span><span>KPIs</span><span>Visualización</span></div>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                    <h3 data-i18n="impact4.title">IA aplicada y gobernanza</h3>
+                    <p data-i18n="impact4.desc">Identificación de casos de uso viables, criterios de evaluación de proveedores de IA y cumplimiento normativo (Política Nacional de IA de Chile, Reglamento Europeo de IA).</p>
+                    <div class="service-tags"><span>Casos de uso</span><span>EU AI Act</span><span>Evaluación técnica</span></div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="section" id="experiencia">
+    <section class="section" id="metodo">
         <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">03.</span> <span data-i18n="section.experiencia">Experiencia Profesional</span>
-            </h2>
+            <h2 class="section-title reveal" data-i18n="section.method">Cómo dirijo un proyecto</h2>
+            <ol class="method-grid">
+                <li class="method-card reveal">
+                    <span class="method-num">01</span>
+                    <h3 data-i18n="method1.title">Diagnóstico</h3>
+                    <p data-i18n="method1.desc">Levantamiento de alcance, actores, restricciones presupuestarias y normativas. Línea base medible antes de comprometer nada.</p>
+                </li>
+                <li class="method-card reveal">
+                    <span class="method-num">02</span>
+                    <h3 data-i18n="method2.title">Planificación</h3>
+                    <p data-i18n="method2.desc">Cartera, hitos, matriz de riesgos y criterios de aceptación acordados con la contraparte. Bases técnicas si hay licitación de por medio.</p>
+                </li>
+                <li class="method-card reveal">
+                    <span class="method-num">03</span>
+                    <h3 data-i18n="method3.title">Ejecución y control</h3>
+                    <p data-i18n="method3.desc">Seguimiento de avance contra línea base, gestión de proveedores, y decisiones documentadas cuando hay desviación.</p>
+                </li>
+                <li class="method-card reveal">
+                    <span class="method-num">04</span>
+                    <h3 data-i18n="method4.title">Cierre y transferencia</h3>
+                    <p data-i18n="method4.desc">Traspaso operativo, indicadores de resultado y continuidad del servicio sin dependencia de quien lo construyó.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="experiencia">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="section.experience">Experiencia</h2>
             <div class="timeline">
-                <div class="timeline-item reveal">
+                <article class="timeline-item reveal">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3 data-i18n="exp1.title">Jefe de Departamento BNE</h3>
-                            <span class="timeline-company">
-                                <i class="fas fa-landmark"></i> <span data-i18n="exp1.company">Bolsa Nacional de Empleo — Subsecretaría del Trabajo</span>
-                            </span>
+                            <h3 data-i18n="exp1.title">Jefe de Departamento – BNE</h3>
+                            <span class="timeline-company"><i class="fas fa-landmark" aria-hidden="true"></i> <span data-i18n="exp1.company">Subsecretaría del Trabajo, Gobierno de Chile</span></span>
                         </div>
-                        <span class="timeline-date">
-                            <i class="fas fa-calendar"></i> <span data-i18n="exp1.date">Mayo 2022 — Diciembre 2025</span>
-                        </span>
-                        <p data-i18n="exp1.desc">Definición de lineamientos estratégicos y planes de acción para la plataforma
-                        nacional de empleo. Dirección del departamento para la ejecución de estrategias,
-                        análisis de impacto de inversiones en desarrollos tecnológicos, gestión de
-                        licitaciones públicas y participación técnica en la actualización de la
-                        Política Nacional de Inteligencia Artificial.</p>
-                        <div class="timeline-tags">
-                            <span class="tag" data-i18n="exp1.tag1">Estrategia</span>
-                            <span class="tag" data-i18n="exp1.tag2">Licitaciones</span>
-                            <span class="tag" data-i18n="exp1.tag3">Política IA</span>
-                            <span class="tag" data-i18n="exp1.tag4">Gestión Pública</span>
-                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i> <span data-i18n="exp1.date">Mayo 2022 – Diciembre 2025</span></span>
+                        <p class="exp-context" data-i18n="exp1.context">Departamento de la Bolsa Nacional de Empleo (BNE): plataforma pública nacional de intermediación laboral de Chile, país de ~20 millones de habitantes.</p>
+                        <ul class="exp-bullets">
+                            <li data-i18n="exp1.b1">Lideré la licitación pública de más de 8 M€ para la plataforma <abbr title="Bolsa Nacional de Empleo: plataforma pública nacional de intermediación laboral de Chile">BNE</abbr> 2025–2029, adjudicando el contrato en plazo y garantizando la continuidad operativa de un portal con más de 500.000 usuarios activos anuales.</li>
+                            <li data-i18n="exp1.b2">Reduje el time-to-market de nuevos desarrollos en torno a un 30%, definiendo lineamientos estratégicos y planes de acción trimestrales alineados con 4 objetivos ministeriales clave.</li>
+                            <li data-i18n="exp1.b3">Coordinación técnica en la actualización de la Política Nacional de Inteligencia Artificial de Chile.</li>
+                            <li data-i18n="exp1.b4">Gestión de procesos de licitación pública garantizando la continuidad operativa de servicios digitales críticos.</li>
+                        </ul>
+                        <div class="timeline-tags"><span class="tag">Licitaciones 8M€+</span><span class="tag">Dirección de equipo</span><span class="tag">Política IA</span><span class="tag">Continuidad operativa</span></div>
                     </div>
-                </div>
-                <div class="timeline-item reveal">
+                </article>
+                <article class="timeline-item reveal">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3 data-i18n="exp2.title">Encargado de Procesos y Convenios</h3>
-                            <span class="timeline-company">
-                                <i class="fas fa-hospital"></i> <span data-i18n="exp2.company">Colegio Médico de Chile A.G.</span>
-                            </span>
+                            <span class="timeline-company"><i class="fas fa-hospital" aria-hidden="true"></i> <span data-i18n="exp2.company">Colegio Médico de Chile A.G.</span></span>
                         </div>
-                        <span class="timeline-date">
-                            <i class="fas fa-calendar"></i> <span data-i18n="exp2.date">Septiembre 2019 — Enero 2022</span>
-                        </span>
-                        <p data-i18n="exp2.desc">Liderazgo en la elaboración de descripciones de cargo institucionales y
-                        estandarización de procesos internos. Implementación de firma y pago electrónico
-                        y creación de convenios estratégicos con aliados externos.</p>
-                        <div class="timeline-tags">
-                            <span class="tag" data-i18n="exp2.tag1">Procesos</span>
-                            <span class="tag" data-i18n="exp2.tag2">Firma Electrónica</span>
-                            <span class="tag" data-i18n="exp2.tag3">Convenios</span>
-                            <span class="tag" data-i18n="exp2.tag4">Estandarización</span>
-                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i> <span data-i18n="exp2.date">Septiembre 2019 – Enero 2022</span></span>
+                        <ul class="exp-bullets">
+                            <li data-i18n="exp2.b1">Escalé la transformación digital implementando firma electrónica y pago en línea, reduciendo un 40% los trámites presenciales y estandarizando más de 15 procesos institucionales.</li>
+                            <li data-i18n="exp2.b2">Diseñé y cerré 6 convenios estratégicos con aliados externos, incrementando un 25% la base de servicios disponibles para más de 18.000 colegiados.</li>
+                            <li data-i18n="exp2.b3">Coordinación de proyectos de transformación digital con proveedores y equipos internos.</li>
+                        </ul>
+                        <div class="timeline-tags"><span class="tag">Firma electrónica</span><span class="tag">Pago en línea</span><span class="tag">15+ procesos</span><span class="tag">18.000+ usuarios</span></div>
                     </div>
-                </div>
-                <div class="timeline-item reveal">
+                </article>
+                <article class="timeline-item reveal">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3 data-i18n="exp3.title">Ingeniero de Planificación</h3>
-                            <span class="timeline-company">
-                                <i class="fas fa-graduation-cap"></i> <span data-i18n="exp3.company">Agencia de Calidad de la Educación</span>
-                            </span>
+                            <span class="timeline-company"><i class="fas fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="exp3.company">Agencia de Calidad de la Educación</span></span>
                         </div>
-                        <span class="timeline-date">
-                            <i class="fas fa-calendar"></i> <span data-i18n="exp3.date">Febrero 2019 — Agosto 2019</span>
-                        </span>
-                        <p data-i18n="exp3.desc">Planificación y control operativo de las visitas técnicas a establecimientos
-                        educacionales a nivel nacional, asegurando el cumplimiento de estándares de
-                        calidad educativa.</p>
-                        <div class="timeline-tags">
-                            <span class="tag" data-i18n="exp3.tag1">Planificación</span>
-                            <span class="tag" data-i18n="exp3.tag2">Control Operativo</span>
-                            <span class="tag" data-i18n="exp3.tag3">Calidad Educativa</span>
-                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i> <span data-i18n="exp3.date">Febrero 2019 – Agosto 2019</span></span>
+                        <ul class="exp-bullets">
+                            <li data-i18n="exp3.b1">Planificación y control operativo de visitas técnicas de evaluación a establecimientos educacionales a nivel nacional.</li>
+                            <li data-i18n="exp3.b2">Coordinación logística y seguimiento de indicadores de gestión operativa.</li>
+                        </ul>
+                        <div class="timeline-tags"><span class="tag">Planificación</span><span class="tag">Control operativo</span><span class="tag">Indicadores</span></div>
                     </div>
-                </div>
-                <div class="timeline-item reveal">
+                </article>
+                <article class="timeline-item reveal">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3 data-i18n="exp4.title">Encargado de Operaciones / Planificación y Control de Gestión</h3>
-                            <span class="timeline-company">
-                                <i class="fas fa-id-card"></i> <span data-i18n="exp4.company">Servicio de Registro Civil e Identificación</span>
-                            </span>
+                            <span class="timeline-company"><i class="fas fa-id-card" aria-hidden="true"></i> <span data-i18n="exp4.company">Servicio de Registro Civil e Identificación</span></span>
                         </div>
-                        <span class="timeline-date">
-                            <i class="fas fa-calendar"></i> <span data-i18n="exp4.date">Abril 2016 — Junio 2018</span>
-                        </span>
-                        <p data-i18n="exp4.desc">Monitoreo y seguimiento de metas institucionales mediante CMI, Alta Dirección
-                        Pública y PMG. Gestión de cartera de proyectos con plataformas BIP y Chile Indica.
-                        Supervisión de oficinas regionales y capacitación en reglamentos y manuales de procesos.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">CMI</span>
-                            <span class="tag">PMG</span>
-                            <span class="tag" data-i18n="exp4.tag3">Proyectos BIP</span>
-                            <span class="tag" data-i18n="exp4.tag4">Operaciones</span>
-                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i> <span data-i18n="exp4.date">Abril 2016 – Junio 2018</span></span>
+                        <ul class="exp-bullets">
+                            <li data-i18n-html="exp4.b1">Optimicé el seguimiento de 12 metas institucionales (<abbr title="Cuadro de Mando Integral: Balanced Scorecard">CMI</abbr>, <abbr title="Alta Dirección Pública: sistema de selección y evaluación de directivos públicos">ADP</abbr>, <abbr title="Programa de Mejoramiento de la Gestión: sistema de incentivo al desempeño institucional del Estado">PMG</abbr>), alcanzando un cumplimiento del 94% en el ejercicio 2017, 8 puntos porcentuales sobre el año anterior.</li>
+                            <li data-i18n-html="exp4.b2">Gestioné una cartera de 2 proyectos en las plataformas <abbr title="Banco Integrado de Proyectos: sistema nacional de inversión pública">BIP</abbr> y Chile Indica, con presupuesto combinado superior a 300 millones de CLP, asegurando el reporte oportuno al Ministerio de Hacienda.</li>
+                            <li data-i18n="exp4.b3">Supervisión operativa de oficinas regionales y capacitación en procesos y normativas institucionales.</li>
+                        </ul>
+                        <div class="timeline-tags"><span class="tag">CMI</span><span class="tag">94% cumplimiento</span><span class="tag">Cartera de proyectos</span><span class="tag">Oficinas regionales</span></div>
                     </div>
-                </div>
-                <div class="timeline-item reveal">
+                </article>
+                <article class="timeline-item reveal">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3 data-i18n="exp5.title">Analista de Control de Gestión y Procesos</h3>
-                            <span class="timeline-company">
-                                <i class="fas fa-chart-bar"></i> <span data-i18n="exp5.company">SVS / Univ. de Viña del Mar / Cepech</span>
-                            </span>
+                            <span class="timeline-company"><i class="fas fa-chart-bar" aria-hidden="true"></i> <span data-i18n="exp5.company">SVS / Univ. de Viña del Mar / Cepech</span></span>
                         </div>
-                        <span class="timeline-date">
-                            <i class="fas fa-calendar"></i> <span data-i18n="exp5.date">Mayo 2012 — Febrero 2015</span>
-                        </span>
-                        <p data-i18n="exp5.desc">Estandarización de fuentes de información para control presupuestario y gestión
-                        de licitaciones. Creación de mapas estratégicos, informes de gestión para alta
-                        dirección y gestión de matrices de riesgo.</p>
-                        <div class="timeline-tags">
-                            <span class="tag" data-i18n="exp5.tag1">Presupuestos</span>
-                            <span class="tag" data-i18n="exp5.tag2">Licitaciones</span>
-                            <span class="tag" data-i18n="exp5.tag3">Mapas Estratégicos</span>
-                            <span class="tag" data-i18n="exp5.tag4">Riesgo</span>
-                        </div>
+                        <span class="timeline-date"><i class="fas fa-calendar" aria-hidden="true"></i> <span data-i18n="exp5.date">Mayo 2012 – Febrero 2015</span></span>
+                        <ul class="exp-bullets">
+                            <li data-i18n="exp5.b1">Estandarización de información para control presupuestario y gestión de licitaciones públicas en 3 organizaciones.</li>
+                            <li data-i18n="exp5.b2">Elaboración de mapas estratégicos e informes de gestión para alta dirección.</li>
+                            <li data-i18n="exp5.b3">Gestión de matrices de riesgo y mejora de plataformas digitales de atención ciudadana.</li>
+                        </ul>
+                        <div class="timeline-tags"><span class="tag">Presupuestos</span><span class="tag">Mapas estratégicos</span><span class="tag">Matrices de riesgo</span></div>
                     </div>
-                </div>
+                </article>
+            </div>
+
+            <details class="glossary reveal">
+                <summary data-i18n="glossary.title">Glosario de siglas del sector público chileno</summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-i18n="glossary.th1">Sigla</th>
+                            <th data-i18n="glossary.th2">Qué es</th>
+                            <th data-i18n="glossary.th3">Equivalente internacional</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>BNE</td><td>Bolsa Nacional de Empleo</td><td>Portal público nacional de empleo</td></tr>
+                        <tr><td>CMI</td><td>Cuadro de Mando Integral</td><td>Balanced Scorecard</td></tr>
+                        <tr><td>PMG</td><td>Programa de Mejoramiento de la Gestión</td><td>Sistema de incentivo al desempeño institucional del Estado</td></tr>
+                        <tr><td>ADP</td><td>Alta Dirección Pública</td><td>Sistema de selección y evaluación de directivos públicos</td></tr>
+                        <tr><td>BIP</td><td>Banco Integrado de Proyectos</td><td>Sistema nacional de inversión pública</td></tr>
+                        <tr><td>Chile Indica</td><td>Plataforma de inversión pública regional</td><td>Gestión de cartera de inversión territorial</td></tr>
+                        <tr><td>ChileCompra</td><td>Sistema nacional de compras públicas</td><td>Equivalente a la Plataforma de Contratación del Sector Público (ES)</td></tr>
+                        <tr><td>SVS</td><td>Superintendencia de Valores y Seguros (hoy CMF)</td><td>Regulador del mercado financiero</td></tr>
+                        <tr><td>ENE</td><td>Encuesta Nacional de Empleo (INE)</td><td>Equivalente a la EPA en España</td></tr>
+                    </tbody>
+                </table>
+            </details>
+        </div>
+    </section>
+
+    <section class="section" id="competencias">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="section.skills">Competencias</h2>
+            <div class="skills-blocks">
+                <article class="skill-block reveal">
+                    <h3 data-i18n="skill.pm">Gestión de Proyectos TI</h3>
+                    <div class="chips">
+                        <span>Dirección de licitaciones públicas (ChileCompra / BID)</span>
+                        <span>Gestión de contratos con proveedores TI</span>
+                        <span>Planificación de cartera de proyectos</span>
+                        <span>Control de alcance, plazo y presupuesto</span>
+                        <span>Cuadro de Mando Integral (CMI)</span>
+                        <span>PMBOK</span>
+                        <span>Agile</span>
+                    </div>
+                </article>
+                <article class="skill-block reveal">
+                    <h3 data-i18n="skill.public">Sector Público</h3>
+                    <div class="chips">
+                        <span>Más de 10 años en administración pública</span>
+                        <span>Gestión presupuestaria</span>
+                        <span>Indicadores ADP/PMG</span>
+                        <span>Política de IA</span>
+                        <span>Digitalización de servicios</span>
+                        <span>Coordinación con organismos públicos</span>
+                    </div>
+                </article>
+                <article class="skill-block reveal">
+                    <h3 data-i18n="skill.ds">Data Science & IA</h3>
+                    <div class="chips">
+                        <span>Python (Pandas, Scikit-learn, TensorFlow)</span>
+                        <span>Machine Learning</span>
+                        <span>Análisis de datos</span>
+                        <span>Automatización de procesos</span>
+                        <span>Definición y medición de KPIs</span>
+                    </div>
+                </article>
+                <article class="skill-block reveal">
+                    <h3 data-i18n="skill.dev">Desarrollo</h3>
+                    <div class="chips">
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>SQL</span>
+                        <span>REST APIs</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                </article>
+                <article class="skill-block reveal">
+                    <h3 data-i18n="skill.lang">Idiomas</h3>
+                    <div class="chips">
+                        <span data-i18n="skill.lang.es">Español (nativo)</span>
+                        <span data-i18n="skill.lang.en">Inglés (intermedio)</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section section-alt" id="habilidades">
+    <section class="section section-alt" id="logros">
         <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">04.</span> <span data-i18n="section.competencias">Competencias</span>
-            </h2>
-            <div class="skills-grid">
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <i class="fas fa-brain"></i>
-                        <h3 data-i18n="skill.cat1">Data Science & Analítica</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item" data-level="85">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s1">Python / Data Science</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="90">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s2">Análisis de Datos</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="80">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s3">Visualización de Datos</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="85">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s4">Indicadores & KPIs</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <i class="fas fa-code"></i>
-                        <h3 data-i18n="skill.cat2">Desarrollo Web Full Stack</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item" data-level="80">
-                            <div class="skill-info">
-                                <span>JavaScript / Node.js</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="75">
-                            <div class="skill-info">
-                                <span>HTML / CSS / React</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="70">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s7">Bases de Datos SQL</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="70">
-                            <div class="skill-info">
-                                <span>REST APIs</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category reveal">
-                    <div class="skill-category-header">
-                        <i class="fas fa-chess-king"></i>
-                        <h3 data-i18n="skill.cat3">Gestión & Estrategia</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item" data-level="95">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s9">Control de Gestión / CMI</span>
-                                <span class="skill-percent">95%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="90">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s10">Gestión Presupuestaria</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="90">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s11">Licitaciones Públicas</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                        <div class="skill-item" data-level="85">
-                            <div class="skill-info">
-                                <span data-i18n="skill.s12">Mejora Continua / PMG</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar"><div class="skill-fill"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Logros Section -->
-    <section class="section" id="logros">
-        <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">05.</span> <span data-i18n="section.logros">Logros Destacados</span>
-            </h2>
+            <h2 class="section-title reveal" data-i18n="section.achievements">Logros</h2>
             <div class="projects-grid">
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                    </div>
+                <article class="project-card reveal">
+                    <div class="project-image"><div class="project-placeholder"><i class="fas fa-briefcase" aria-hidden="true"></i></div></div>
                     <div class="project-info">
                         <span class="project-label" data-i18n="logro1.label">Subsecretaría del Trabajo</span>
                         <h3 data-i18n="logro1.title">Bolsa Nacional de Empleo</h3>
-                        <p data-i18n="logro1.desc">Dirección estratégica del departamento BNE, liderando la licitación para
-                        la administración del portal por el periodo 2025–2029, asegurando la continuidad
-                        operativa y el impacto de las inversiones tecnológicas en la plataforma nacional.</p>
-                        <div class="project-tech">
-                            <span data-i18n="logro1.tech1">Estrategia</span>
-                            <span data-i18n="logro1.tech2">Licitaciones</span>
-                            <span data-i18n="logro1.tech3">Tecnología</span>
-                        </div>
+                        <p data-i18n="logro1.desc">Dirección estratégica del Departamento BNE y de la licitación pública de más de 8 M€ para la administración del portal 2025–2029, adjudicada en plazo, asegurando la continuidad operativa de una plataforma con más de 500.000 usuarios activos anuales.</p>
                     </div>
-                </div>
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-image"><div class="project-placeholder"><i class="fas fa-landmark" aria-hidden="true"></i></div></div>
                     <div class="project-info">
                         <span class="project-label" data-i18n="logro2.label">Gobierno de Chile</span>
-                        <h3 data-i18n="logro2.title">Política Nacional de Inteligencia Artificial</h3>
-                        <p data-i18n="logro2.desc">Participación técnica activa en la actualización de la Política Nacional
-                        de IA, contribuyendo con visión de gestión pública e innovación tecnológica.</p>
-                        <div class="project-tech">
-                            <span data-i18n="logro2.tech1">IA</span>
-                            <span data-i18n="logro2.tech2">Política Pública</span>
-                            <span data-i18n="logro2.tech3">Innovación</span>
-                        </div>
+                        <h3 data-i18n="logro2.title">Política Nacional de IA</h3>
+                        <p data-i18n="logro2.desc">Coordinación técnica en la actualización de la Política Nacional de Inteligencia Artificial de Chile, aportando la perspectiva de gestión pública y de viabilidad de implementación.</p>
                     </div>
-                </div>
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-digital-tachograph"></i>
-                        </div>
-                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-image"><div class="project-placeholder"><i class="fas fa-stethoscope" aria-hidden="true"></i></div></div>
                     <div class="project-info">
                         <span class="project-label" data-i18n="logro3.label">Colegio Médico de Chile</span>
-                        <h3 data-i18n="logro3.title">Transformación Digital Institucional</h3>
-                        <p data-i18n="logro3.desc">Implementación de firma y pago electrónico, estandarización de procesos internos
-                        y creación de convenios estratégicos con aliados externos.</p>
-                        <div class="project-tech">
-                            <span data-i18n="logro3.tech1">Firma Digital</span>
-                            <span data-i18n="logro3.tech2">Procesos</span>
-                            <span data-i18n="logro3.tech3">Convenios</span>
-                        </div>
+                        <h3 data-i18n="logro3.title">Transformación digital</h3>
+                        <p data-i18n="logro3.desc">Implementación de firma electrónica y pago en línea: 40% menos trámites presenciales, más de 15 procesos estandarizados y 6 convenios estratégicos que ampliaron un 25% la base de servicios para más de 18.000 colegiados.</p>
                     </div>
-                </div>
-                <div class="project-card reveal">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
-                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-image"><div class="project-placeholder"><i class="fas fa-chart-pie" aria-hidden="true"></i></div></div>
                     <div class="project-info">
                         <span class="project-label" data-i18n="logro4.label">Registro Civil</span>
-                        <h3 data-i18n="logro4.title">Sistema de Control de Gestión Integral</h3>
-                        <p data-i18n="logro4.desc">Implementación de Cuadro de Mando Integral (CMI), seguimiento de metas ADP
-                        y PMG, y gestión de cartera de proyectos con plataformas BIP y Chile Indica.</p>
-                        <div class="project-tech">
-                            <span>CMI</span>
-                            <span>ADP</span>
-                            <span>PMG</span>
-                            <span>BIP</span>
-                        </div>
+                        <h3 data-i18n="logro4.title">Control de gestión</h3>
+                        <p data-i18n="logro4.desc">Sistema integral de seguimiento de 12 metas institucionales (CMI, ADP, PMG) con 94% de cumplimiento en 2017 (+8 pp interanual) y gestión de cartera de proyectos por más de 300 millones de CLP en BIP y Chile Indica.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="section section-alt" id="educacion">
+    <section class="section" id="formacion">
         <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">06.</span> <span data-i18n="section.educacion">Formación Académica</span>
-            </h2>
+            <h2 class="section-title reveal" data-i18n="section.education">Formación</h2>
             <div class="education-grid">
-                <div class="education-card reveal">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                <article class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+                    <div class="education-info">
+                        <h3 data-i18n="edu0.title">Máster en Inteligencia Artificial para los Negocios</h3>
+                        <span class="education-school"><i class="fas fa-university" aria-hidden="true"></i> <span data-i18n="edu0.school">EAE Business School, Barcelona</span></span>
+                        <span class="education-date" data-i18n="edu0.date">2025–2026, completado</span>
+                        <p data-i18n="edu0.desc">Gestión estratégica de la IA aplicada a negocio, con capacidad técnica para convertir inversión tecnológica en impacto medible.</p>
                     </div>
+                </article>
+                <article class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
                     <div class="education-info">
                         <h3 data-i18n="edu1.title">Ingeniero en Información y Control de Gestión</h3>
-                        <span class="education-school">
-                            <i class="fas fa-university"></i> <span data-i18n="edu1.school">Universidad de Chile — Facultad de Economía y Negocios</span>
-                        </span>
-                        <span class="education-date" data-i18n="edu1.date">Título Profesional</span>
-                        <p data-i18n="edu1.desc">Formación integral en control de gestión, sistemas de información, finanzas,
-                        contabilidad y administración estratégica.</p>
+                        <span class="education-school"><i class="fas fa-university" aria-hidden="true"></i> <span data-i18n="edu1.school">Universidad de Chile — Facultad de Economía y Negocios</span></span>
+                        <span class="education-date" data-i18n="edu1.date">Título profesional</span>
+                        <p data-i18n="edu1.desc">Título profesional de 10 semestres, equivalente a grado + máster en el sistema europeo (sujeto a homologación).</p>
                     </div>
-                </div>
-                <div class="education-card reveal">
-                    <div class="education-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
+                </article>
+                <article class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
                     <div class="education-info">
                         <h3 data-i18n="edu2.title">Analista Data Science con Python</h3>
-                        <span class="education-school">
-                            <i class="fas fa-laptop-code"></i> <span data-i18n="edu2.school">Formación Especializada</span>
-                        </span>
-                        <span class="education-date" data-i18n="edu2.date">354 horas de formación</span>
-                        <p data-i18n="edu2.desc">Programa avanzado en ciencia de datos con Python, incluyendo análisis estadístico,
-                        machine learning, visualización de datos y procesamiento de grandes volúmenes de información.</p>
+                        <span class="education-date" data-i18n="edu2.date">354 horas</span>
                     </div>
-                </div>
-                <div class="education-card reveal">
-                    <div class="education-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
+                </article>
+                <article class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
                     <div class="education-info">
                         <h3 data-i18n="edu3.title">Desarrollador Full Stack JavaScript</h3>
-                        <span class="education-school">
-                            <i class="fas fa-laptop-code"></i> <span data-i18n="edu3.school">Formación Especializada</span>
-                        </span>
-                        <span class="education-date" data-i18n="edu3.date">440 horas de formación</span>
-                        <p data-i18n="edu3.desc">Programa intensivo de desarrollo web completo con JavaScript, incluyendo
-                        frontend, backend, bases de datos y despliegue de aplicaciones.</p>
+                        <span class="education-date" data-i18n="edu3.date">440 horas</span>
                     </div>
-                </div>
-                <div class="education-card reveal">
-                    <div class="education-icon">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                    </div>
+                </article>
+                <article class="education-card reveal">
+                    <div class="education-icon"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i></div>
                     <div class="education-info">
                         <h3 data-i18n="edu4.title">Preparación y Evaluación Social de Proyectos</h3>
-                        <span class="education-school">
-                            <i class="fas fa-landmark"></i> <span data-i18n="edu4.school">Formación en Gestión Pública</span>
-                        </span>
-                        <span class="education-date" data-i18n="edu4.date">80 horas de formación</span>
-                        <p data-i18n="edu4.desc">Metodologías de evaluación social de proyectos públicos e introducción
-                        a la administración del Estado.</p>
+                        <span class="education-date" data-i18n="edu4.date">80 horas</span>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section class="section section-alt" id="mercado-laboral">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="section.data">Mercado laboral de Chile</h2>
+            <p class="section-subtitle reveal" data-i18n="section.data.sub">Datos oficiales del INE, actualizados automáticamente cada mes.</p>
+            <div class="aviso-datos" hidden data-i18n="data.warn">Estos datos llevan más de 60 días sin actualizarse. El último valor bueno se mantiene a la vista.</div>
+            <div class="error-datos" hidden data-i18n="data.error">No se pudieron cargar los datos del INE. Recarga la página o consulta la fuente original.</div>
+            <div class="kpi-grid reveal">
+                <div class="kpi-card">
+                    <span class="kpi-value" id="kpi-unemp">9,4%</span>
+                    <span class="kpi-label" data-i18n="data.unemp">Tasa de desocupación</span>
+                </div>
+                <div class="kpi-card">
+                    <span class="kpi-value" id="kpi-yoy">+0,5 pp</span>
+                    <span class="kpi-label" data-i18n="data.yoy">Variación 12 meses</span>
+                </div>
+                <div class="kpi-card">
+                    <span class="kpi-value" id="kpi-period">abr–jun 2026</span>
+                    <span class="kpi-label" data-i18n="data.period">Trimestre móvil</span>
+                </div>
+            </div>
+            <div class="chart-wrap reveal">
+                <canvas id="chartDesocupacion" width="900" height="360" aria-hidden="true"></canvas>
+                <table class="visually-hidden" id="tabla-serie">
+                    <caption data-i18n="data.tableCaption">Serie de la tasa de desocupación nacional (ENE)</caption>
+                    <thead>
+                        <tr>
+                            <th data-i18n="data.thPeriod">Periodo</th>
+                            <th data-i18n="data.thValue">Tasa (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <p class="data-source" id="data-source">
+                <span data-i18n="data.source">Fuente: Instituto Nacional de Estadísticas de Chile — Encuesta Nacional de Empleo (ENE).</span>
+                <a href="https://www.ine.gob.cl/estadisticas-por-tema/mercado-laboral/ocupacion-y-desocupacion" target="_blank" rel="noopener noreferrer" data-i18n="data.sourceLink">Ver fuente original</a>
+                ·
+                <a href="https://www.ine.gob.cl/terminos-de-uso-y-licencia-de-datos-abiertos" target="_blank" rel="noopener noreferrer" data-i18n="data.license">Términos de uso y licencia</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="notas" hidden>
+        <div class="container">
+            <h2 class="section-title" data-i18n="nav.notes">Notas</h2>
+            <div id="notas-list"></div>
+        </div>
+    </section>
+
     <section class="section" id="contacto">
         <div class="container">
-            <h2 class="section-title reveal">
-                <span class="section-number">07.</span> <span data-i18n="nav.contacto">Contacto</span>
-            </h2>
+            <h2 class="section-title reveal" data-i18n="section.contact">Contacto</h2>
             <div class="contact-grid">
                 <div class="contact-info reveal">
-                    <h3 data-i18n="contact.title">Conversemos sobre tu próximo desafío</h3>
-                    <p data-i18n="contact.text">Estoy interesado en oportunidades donde pueda aportar mi experiencia en control
-                    de gestión, dirección de proyectos y analítica de datos. No dudes en contactarme.</p>
+                    <h3 data-i18n="contact.title">Hablemos de tu vacante</h3>
+                    <p data-i18n="contact.text">Si buscas un jefe de proyecto TI con criterio de gestión pública y capacidad técnica real, escríbeme. Respondo en menos de 48 horas.</p>
                     <div class="contact-methods">
                         <a href="mailto:sherrera@fen.uchile.cl" class="contact-method">
-                            <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-method-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
                             <div>
                                 <span class="contact-method-label">Email</span>
                                 <span class="contact-method-value">sherrera@fen.uchile.cl</span>
                             </div>
                         </a>
                         <div class="contact-method">
-                            <div class="contact-method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-method-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
                             <div>
                                 <span class="contact-method-label" data-i18n="contact.location.label">Ubicación</span>
-                                <span class="contact-method-value" data-i18n="contact.location.value">Barcelona, España</span>
+                                <span class="contact-method-value" data-i18n="contact.location.value">Barcelona, España · Chile en remoto</span>
                             </div>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/sergio-gustavo-herrera-toloza-90450932/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/chechoguz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sergio-gustavo-herrera-toloza-90450932/" target="_blank" rel="noopener noreferrer" class="social-link" data-track="clic_linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/sherrera@fen.uchile.cl" method="POST">
-                    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio">
+                <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/sherrera@fen.uchile.cl" method="POST" novalidate>
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde el portal de Sergio Herrera">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="">
-                    <input type="text" name="_honey" style="display:none">
+                    <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off">
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
                     <div class="form-group">
-                        <input type="text" name="name" id="name" required placeholder=" ">
+                        <input type="text" name="name" id="name" required placeholder=" " autocomplete="name">
                         <label for="name" data-i18n="form.name">Nombre completo</label>
                         <div class="form-line"></div>
+                        <p class="field-error" id="error-name" hidden data-i18n="form.errorName">Indica tu nombre.</p>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" id="email" required placeholder=" ">
+                        <input type="email" name="email" id="email" required placeholder=" " autocomplete="email">
                         <label for="email">Email</label>
                         <div class="form-line"></div>
+                        <p class="field-error" id="error-email" hidden data-i18n="form.errorEmail">Indica un correo válido.</p>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="_subject" id="subject" required placeholder=" ">
+                        <input type="text" name="asunto" id="subject" required placeholder=" " autocomplete="off">
                         <label for="subject" data-i18n="form.subject">Asunto</label>
                         <div class="form-line"></div>
+                        <p class="field-error" id="error-subject" hidden data-i18n="form.errorSubject">Indica el asunto.</p>
                     </div>
                     <div class="form-group">
                         <textarea name="message" id="message" rows="4" required placeholder=" "></textarea>
                         <label for="message" data-i18n="form.message">Mensaje</label>
                         <div class="form-line"></div>
+                        <p class="field-error" id="error-message" hidden data-i18n="form.errorMessage">Escribe un mensaje.</p>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <i class="fas fa-paper-plane"></i> <span data-i18n="contact.send">Enviar Mensaje</span>
+                    <label class="consent">
+                        <input type="checkbox" name="consentimiento" id="consentimiento" required>
+                        <span><span data-i18n="form.consent">Acepto que mis datos se usen únicamente para responder a esta consulta.</span>
+                        <a href="privacidad.html" data-i18n="form.privacy">Política de privacidad</a>.</span>
+                    </label>
+                    <p class="field-error" id="error-consent" hidden data-i18n="form.errorConsent">Necesito tu consentimiento para poder responderte.</p>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="contact.send">Enviar mensaje</span>
                     </button>
                 </form>
             </div>
         </div>
     </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="brand-accent">&lt;</span>SHT<span class="brand-accent">/&gt;</span>
-                </div>
-                <p class="footer-text"><span data-i18n="footer.text">Diseñado con</span> <span class="heart">&hearts;</span> <span data-i18n="footer.by">por Sergio Herrera Toloza</span></p>
-                <p class="footer-copyright" data-i18n="footer.copyright">&copy; 2026 — Todos los derechos reservados</p>
+                <div class="footer-brand" aria-hidden="true"><span class="brand-accent">&lt;</span>SHT<span class="brand-accent">/&gt;</span></div>
+                <p class="footer-text" data-i18n="footer.text">Sitio construido a mano en HTML, CSS y JavaScript · Datos de mercado laboral vía API del INE de Chile · Última actualización: 18 de agosto de 2026</p>
+                <p class="footer-links">
+                    <a href="aviso-legal.html" data-i18n="footer.legal">Aviso legal</a>
+                    ·
+                    <a href="privacidad.html" data-i18n="footer.privacy">Privacidad</a>
+                </p>
+                <p class="footer-copyright" data-i18n="footer.copyright">© 2026 Sergio Herrera Toloza</p>
             </div>
         </div>
     </footer>
 
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <div class="mobile-cta" id="mobileCta" hidden>
+        <a href="assets/cv/Sergio_Herrera_CV_JefeProyectoTI_ES_Barcelona.pdf" class="btn btn-primary" id="cv-mobile" download data-track="descarga_cv" data-cv="es-barcelona">
+            <i class="fas fa-download" aria-hidden="true"></i> <span data-i18n="cta.cv">Descargar CV (España)</span>
+        </a>
+        <a href="#contacto" class="btn btn-outline"><span data-i18n="cta.talk">Hablemos</span></a>
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

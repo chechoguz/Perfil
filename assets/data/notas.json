@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "licitaciones-ti-sector-publico",
+    "titulo": "Cómo se dirige una licitación TI de 8 M€ sin que el proyecto muera en la adjudicación",
+    "resumen": "PENDIENTE — 2 o 3 líneas sobre bases técnicas, criterios de evaluación y continuidad operativa.",
+    "fecha": null,
+    "estado": "borrador",
+    "idiomas": ["es"],
+    "lectura_min": null
+  },
+  {
+    "slug": "ai-act-servicio-publico",
+    "titulo": "Qué cambia el Reglamento Europeo de IA para un servicio público",
+    "resumen": "PENDIENTE — comparación entre el AI Act y la Política Nacional de IA de Chile.",
+    "fecha": null,
+    "estado": "borrador",
+    "idiomas": ["es"],
+    "lectura_min": null
+  },
+  {
+    "slug": "de-la-gestion-publica-a-los-datos",
+    "titulo": "De jefe de departamento a construir modelos: lo que la gestión pública le enseña a la ciencia de datos",
+    "resumen": "PENDIENTE — texto personal sobre el cambio de perfil.",
+    "fecha": null,
+    "estado": "borrador",
+    "idiomas": ["es"],
+    "lectura_min": null
+  }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://chechoguz.github.io/Perfil/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://chechoguz.github.io/Perfil/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://chechoguz.github.io/Perfil/?lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chechoguz.github.io/Perfil/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chechoguz.github.io/Perfil/"/>
+  </url>
+  <url>
+    <loc>https://chechoguz.github.io/Perfil/privacidad.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://chechoguz.github.io/Perfil/aviso-legal.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
