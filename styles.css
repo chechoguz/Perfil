@@ -1616,6 +1616,10 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1694,7 +1698,10 @@ body {
     }
 
     .kpi-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .kpi-card:last-child {
+        grid-column: 1 / -1;
     }
 
     .mobile-cta {
