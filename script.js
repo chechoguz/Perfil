@@ -195,6 +195,7 @@ window.addEventListener('scroll', () => {
         const hero = document.getElementById('inicio');
         const pastHero = hero ? y > hero.offsetHeight - 80 : y > 400;
         mobileCta.hidden = !pastHero;
+        document.body.style.paddingBottom = pastHero ? mobileCta.offsetHeight + 'px' : '';
     }
 });
 
