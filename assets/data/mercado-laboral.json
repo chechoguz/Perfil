@@ -2,7 +2,7 @@
   "fuente": "INE Chile — Encuesta Nacional de Empleo (ENE)",
   "url_fuente": "https://www.ine.gob.cl/estadisticas-por-tema/mercado-laboral/ocupacion-y-desocupacion",
   "licencia": "https://www.ine.gob.cl/terminos-de-uso-y-licencia-de-datos-abiertos",
-  "actualizado": "2026-08-18",
+  "actualizado": "2026-08-20",
   "ultimo_periodo": "2026-04",
   "ultimo_periodo_etiqueta": "abr–jun 2026",
   "tasa_desocupacion": 9.4,
