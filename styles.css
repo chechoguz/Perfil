@@ -62,7 +62,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -70,9 +70,9 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.7;
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
@@ -99,8 +99,13 @@ body {
 /* =========================================
    Scrollbar
    ========================================= */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--bg-primary);
+}
 ::-webkit-scrollbar {
     width: 8px;
+    height: 0;
 }
 ::-webkit-scrollbar-track {
     background: var(--bg-primary);
@@ -1616,10 +1621,6 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
-    .method-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 600px) {
@@ -1691,17 +1692,6 @@ body {
 
     .hero-social-links {
         display: none;
-    }
-
-    .method-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .kpi-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    .kpi-card:last-child {
-        grid-column: 1 / -1;
     }
 
     .mobile-cta {
@@ -1812,13 +1802,15 @@ abbr[title] {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.2rem;
     padding: 0;
+    width: 100%;
+    min-width: 0;
 }
-
 .method-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 1.5rem;
+    min-width: 0;
 }
 .method-num {
     font-family: 'JetBrains Mono', monospace;
@@ -1894,6 +1886,7 @@ abbr[title] {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-bottom: 1.5rem;
+    width: 100%;
 }
 .kpi-card {
     background: var(--bg-card);
@@ -1901,6 +1894,8 @@ abbr[title] {
     border-radius: 16px;
     padding: 1.4rem;
     text-align: center;
+    min-width: 0;
+    width: 100%;
 }
 .kpi-value {
     display: block;
@@ -2044,6 +2039,41 @@ abbr[title] {
     .heart,
     .scroll-indicator {
         animation: none !important;
+    }
+}
+
+/* Responsive overrides MUST stay after base portal rules */
+@media (max-width: 900px) {
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kpi-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .kpi-card:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+    .chart-wrap {
+        height: 280px;
+        overflow: hidden;
+    }
+
+    .chart-wrap canvas {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .glossary {
+        overflow-x: auto;
     }
 }
 
