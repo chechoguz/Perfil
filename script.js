@@ -194,8 +194,14 @@ window.addEventListener('scroll', () => {
     if (mobileCta) {
         const hero = document.getElementById('inicio');
         const pastHero = hero ? y > hero.offsetHeight - 80 : y > 400;
-        mobileCta.hidden = !pastHero;
-        document.body.style.paddingBottom = pastHero ? mobileCta.offsetHeight + 'px' : '';
+        const isMobile = window.matchMedia('(max-width: 600px)').matches;
+        if (isMobile && pastHero) {
+            mobileCta.hidden = false;
+            document.body.style.paddingBottom = mobileCta.offsetHeight + 'px';
+        } else {
+            mobileCta.hidden = true;
+            document.body.style.paddingBottom = '';
+        }
     }
 });
 

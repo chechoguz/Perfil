@@ -544,16 +544,18 @@
             </div>
             <div class="chart-wrap reveal">
                 <canvas id="chartDesocupacion" width="900" height="360" aria-hidden="true"></canvas>
-                <table class="visually-hidden" id="tabla-serie">
-                    <caption data-i18n="data.tableCaption">Serie de la tasa de desocupación nacional (ENE)</caption>
-                    <thead>
-                        <tr>
-                            <th data-i18n="data.thPeriod">Periodo</th>
-                            <th data-i18n="data.thValue">Tasa (%)</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
+                <div class="visually-hidden">
+                    <table id="tabla-serie">
+                        <caption data-i18n="data.tableCaption">Serie de la tasa de desocupación nacional (ENE)</caption>
+                        <thead>
+                            <tr>
+                                <th data-i18n="data.thPeriod">Periodo</th>
+                                <th data-i18n="data.thValue">Tasa (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
             </div>
             <p class="data-source" id="data-source">
                 <span data-i18n="data.source">Fuente: Instituto Nacional de Estadísticas de Chile — Encuesta Nacional de Empleo (ENE).</span>
