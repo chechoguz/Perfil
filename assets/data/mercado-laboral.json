@@ -2,13 +2,13 @@
   "fuente": "INE Chile — Encuesta Nacional de Empleo (ENE)",
   "url_fuente": "https://www.ine.gob.cl/estadisticas-por-tema/mercado-laboral/ocupacion-y-desocupacion",
   "licencia": "https://www.ine.gob.cl/terminos-de-uso-y-licencia-de-datos-abiertos",
-  "actualizado": "2026-08-20",
-  "ultimo_periodo": "2026-04",
-  "ultimo_periodo_etiqueta": "abr–jun 2026",
-  "tasa_desocupacion": 9.4,
-  "variacion_12m": 0.5,
-  "tasa_su2": 15.9,
-  "tasa_ocupacion_informal": 27.0,
+  "actualizado": "2026-09-05",
+  "ultimo_periodo": "2026-05",
+  "ultimo_periodo_etiqueta": "may–jul 2026",
+  "tasa_desocupacion": 9.5,
+  "variacion_12m": 0.8,
+  "tasa_su2": 16.0,
+  "tasa_ocupacion_informal": 26.5,
   "serie": [
     {
       "periodo": "2015-01",
@@ -553,6 +553,10 @@
     {
       "periodo": "2026-04",
       "valor": 9.4
+    },
+    {
+      "periodo": "2026-05",
+      "valor": 9.5
     }
   ]
 }
